@@ -1,0 +1,54 @@
+# Core
+numpy==1.26.4
+pandas==2.2.2
+scikit-learn==1.5.1
+joblib==1.4.2
+
+# ML / DL
+torch==2.3.1
+torchvision==0.18.1
+transformers==4.44.2
+tokenizers==0.19.1
+xgboost==2.1.1
+lightgbm==4.5.0
+shap==0.45.1
+
+# Web Crawling & Parsing
+playwright==1.47.0
+beautifulsoup4==4.12.3
+requests==2.32.3
+dnspython==2.7.0
+python-whois==0.9.5
+cryptography==43.0.1
+certifi==2024.8.30
+
+# Image Processing & OCR
+opencv-python==4.10.0.84
+Pillow==10.4.0
+imagehash==4.3.1
+pytesseract==0.3.13
+
+# Temporal / Graph
+networkx==3.3
+torch-geometric==2.6.1
+statsmodels==0.14.3
+
+# LLM fine-tuning / acceleration
+accelerate==0.34.2
+peft==0.12.0
+sentencepiece==0.2.0
+
+# API / Dashboard
+fastapi==0.115.2
+uvicorn==0.30.6
+streamlit==1.38.0
+
+# Database & Storage
+SQLAlchemy==2.0.36
+psycopg2-binary==2.9.9
+redis==5.0.8
+
+# Logging & Utils
+python-dotenv==1.0.1
+loguru==0.7.2
+pytest==8.3.3

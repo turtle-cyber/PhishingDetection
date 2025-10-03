@@ -1,0 +1,13 @@
+ephemeral_providers:
+  - name: ngrok
+    patterns: ["ngrok.io"]
+  - name: vercel
+    patterns: ["vercel.app", "now.sh"]
+  - name: github_pages
+    patterns: ["github.io"]
+  - name: netlify
+    patterns: ["netlify.app"]
+  - name: render
+    patterns: ["onrender.com", "render.com"]
+  - name: pages_dev
+    patterns: ["pages.dev"]

@@ -1,0 +1,80 @@
+
+
+
+
+## File: requirements.txt
+
+
+# PS-02: Core Python dependencies for the phishing detection platform
+# Python >= 3.10 recommended
+
+# Web framework & API
+fastapi
+uvicorn[standard]
+
+# Async HTTP / scraping / browser automation
+httpx
+playwright
+beautifulsoup4
+lxml
+requests
+
+# HTML / rendering helpers
+Jinja2
+selenium
+pyppeteer
+
+# DNS / WHOIS / Network
+dnspython
+python-whois
+ipwhois
+tldextract
+rdap
+
+# Data & ML
+numpy
+pandas
+scikit-learn
+xgboost
+lightgbm
+joblib
+
+# Deep learning & embeddings (CPU-compatible installs)
+torch
+torchvision
+transformers
+sentence-transformers
+timm
+faiss-cpu
+
+# Image & OCR
+Pillow
+opencv-python-headless
+pytesseract
+
+# Graph / GNN (optional - pick DGL or PyG per target infra)
+networkx
+dgl  # optional, use dgl-cpu if available on your platform
+stellargraph
+
+# DB, queue & infra
+psycopg2-binary
+sqlalchemy
+alembic
+redis
+celery
+kafka-python
+
+# Utilities & dev
+python-magic
+pyyaml
+loguru
+huggingface-hub
+accelerate
+
+# Dev / lint / tests
+black
+flake8
+pytest
+pre-commit 
+

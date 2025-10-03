@@ -1,0 +1,17 @@
+parked:
+  max_content_length: 600
+  min_text_length: 200
+  recent_domain_days: 30
+  parking_phrases:
+    - "domain for sale"
+    - "buy this domain"
+    - "parked"
+    - "coming soon"
+    - "this domain is for sale"
+    - "advertisement"
+
+lookalike:
+  edit_distance_threshold_absolute: 3
+  edit_distance_threshold_rel: 0.25
+  favicon_phash_threshold: 10
+  screenshot_phash_threshold: 12
