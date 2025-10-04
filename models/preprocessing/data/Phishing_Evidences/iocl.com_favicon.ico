@@ -1,0 +1,1983 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0, shrink-to-fit=no">
+    <link rel="shortcut icon" href="/assets/images/favicon.png">
+    <link rel="stylesheet" href="/assets/css/bootstrap.min.css?v=aODUUoIodKMdz5cce9l3obCEVX11TEn29ddVmU6R-mI">
+    <link rel="stylesheet" href="/assets/css/font-awesome.min.css?v=gg4WnOJIJAZtmXP9S2Vhqunc1tvvZDXakF1aHWSCmXw">
+    <link rel="stylesheet" href="/assets/css/icon-moon.css?v=1ONLlN8YCZXan-CUSpx1kDRUy0u7FlCWwPjG77SiwbA">
+    <link rel="stylesheet" href="/assets/css/jas-carousel.css?v=xcaXXTIZbbcURtPGuFMlnW7Yh6Gq7kEHe0eM5MF0iHY">
+    <link rel="stylesheet" href="/assets/css/animate.css?v=KBuLxdJ3-nF2_fI5-CiPVoTEdIWi6AmXYJD3T4fTohw">
+    <link rel="stylesheet" href="/assets/css/lightgallery.min.css?v=86ie9X7Kiqe8HOo8cio1QPt200RRHYhoFZrWcv5kAZk">
+    <link rel="stylesheet" href="/assets/css/custom.css?v=KVOJ9cSzFIbG8S4ZgO7UJ607lRdNmC1bcsFM1fJB_T4">
+    <link rel="stylesheet" href="/assets/css/select2.min.css?v=Vdbw_PKZo6Rdx9kZhDOuBW4VKuEE8DYxgzZvJtB7Oas">
+    
+    
+
+    <!-- Google Tag Manager -->
+    <script>
+        (function (w, d, s, l, i) {
+            w[l] = w[l] || []; w[l].push({
+                'gtm.start':
+                    new Date().getTime(), event: 'gtm.js'
+            }); var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                    'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-W5L6K8X');</script>
+    <!-- End Google Tag Manager -->
+</head>
+<body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript>
+        <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-W5L6K8X"
+                height="0" width="0" style="display:none;visibility:hidden"></iframe>
+    </noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    <header class="site-header">
+        <div class="top-bar">
+            <div class="container-fluid">
+                <div class="top-bar-right">
+                    <ul class="clearfix">
+                        <li class="icon link font-size">
+                            <span class="icon-down-arrow-slider_seinior-citizen"></span>
+                            <ul class="gigw">
+                                <li><a href="javascript:void(0);" id="max" onclick="set_font_size('increase')">A+</a></li>
+                                <li><a href="javascript:void(0);" id="normal" onclick="set_font_size('')">A</a></li>
+                                <li><a href="javascript:void(0);" id="min" onclick="set_font_size('decrease')">A-</a></li>
+                                <li><a href="javascript:void(0);" class="theme-item theme-1 dark">A</a></li>
+                                <li><a href="javascript:void(0);" class="theme-item theme-2 light">A</a></li>
+                            </ul>
+                        </li>
+                        <li class="icon link"><a href="/pages/sitemap"><span class="icon-down-arrow-slider_sitemap"></span></a></li>
+                        <li class="dr-lang">
+                            <a role="button" id="language" href="/Language?ReturnUrl=%2Ffavicon.ico&amp;handler=Return">
+                                        <span>हिंदी</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="nav-section">
+                    <div class="row">
+                        <div class="col-lg-3">
+                            <div class="logo">
+                                <a href="/"><img src="/assets/images/logo.gif" alt="Indian Oil Logo"></a>
+                                <div class="search-click"><i class="fa fa-search" aria-hidden="true"></i></div>
+                                <div class="mobClick">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-9">
+                            <div class="header-right">
+                                <div class="d-flex justify-content-between pr-3">
+                                    <div class="search-wrap flex-grow-1">
+                                        <div class="search-wrap-main">
+                                            <div class="search-close"><i class="fa fa-times" aria-hidden="true"></i></div>
+                                            <form method="get" id="search" action="/SearchResults">
+                                                <span id="action"></span>
+                                                <input type="text" id="output" name="output" autocomplete="off" placeholder="What are you looking for?">
+                                                <div class="voice-search" onclick="runSpeechRecognition()" data-toggle="modal" data-target="#voiceSearch">
+                                                    <img src="/assets/images/voice.png" alt="Voice Search">
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                    <ul class="social d-flex justify-content-around align-center">
+                                        <li><a class="fb-bg" href="https://www.facebook.com/IndianOilCorpLimited" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                                        <li><a class="tw-bg" href="https://www.twitter.com/indianOilcl" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                                        <li><a class="yt-bg" href="https://www.youtube.com/channel/UC5ho18VZHwEFSahW0Q_o-6g/feed" target="_blank"><i class="fa fa-youtube-play" aria-hidden="true"></i></a></li>
+                                        <li><a class="insta-bg" href="https://www.instagram.com/indianoilcorp" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                                        <li><a class="in-bg" href="https://www.linkedin.com/company/indian-oil-corp-limited" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+                                    </ul>
+                                </div>
+                                <div class="site-nav clearfix">
+                                    <ul class="clearfix">
+                        <li class="has-sub">
+                                <a class="nav-link"> About Us <div class="nav-item-arrow"></div> </a>
+                                <ul>
+                                                <li class="nav-item dropdown">
+                                                        <a class="nav-link" href="javascript:void(0);">
+                                                            Who we are
+                                                            <div class="nav-item-arrow"></div>
+                                                        </a>
+                                                    <ul>
+                                                                <li class="nav-item dropdown">
+                                                                        <a class="nav-link" href="/about-indianoil">About IndianOil</a>
+                                                                </li>
+                                                                <li class="nav-item dropdown">
+                                                                        <a class="nav-link" href="/pages/AwardsandRecognitions">
+                                                                            Awards and Recognitions
+                                                                        </a>
+                                                                </li>
+                                                                <li class="nav-item dropdown">
+                                                                        <a class="nav-link" href="/corporate-logo">Corporate Logo</a>
+                                                                </li>
+                                                    </ul>
+                                                </li>
+                                                <li class="nav-item dropdown">
+                                                            <a class="nav-link" href="/our-vision-with-values">
+                                                                Our Vision with Values
+                                                            </a>
+                                                </li>
+                                                <li class="nav-item dropdown">
+                                                        <a class="nav-link" href="/pages/our-leadership">
+                                                            Our Leadership
+                                                        </a>
+                                                </li>
+                                                <li class="nav-item dropdown">
+                                                        <a class="nav-link" href="/pages/brand-mascot">
+                                                            Our Mascot
+                                                        </a>
+                                                </li>
+                                                <li class="nav-item dropdown">
+                                                        <a class="nav-link" href="javascript:void(0);">
+                                                            Our Business
+                                                            <div class="nav-item-arrow"></div>
+                                                        </a>
+                                                    <ul>
+                                                                <li class="nav-item dropdown">
+                                                                        <a class="nav-link" href="/pages/our-business-overview">
+                                                                            Overview
+                                                                        </a>
+                                                                </li>
+                                                                <li class="nav-item dropdown">
+                                                                        <a class="nav-link" href="javascript:void(0);">
+                                                                            Refining
+                                                                            <div class="nav-item-arrow"></div>
+                                                                        </a>
+                                                                    <ul>
+                                                                            <li class="nav-item dropdown">
+                                                                                    <a class="nav-link" href="/pages/refining-overview">
+                                                                                        Overview
+                                                                                    </a>
+                                                                            </li>
+                                                                            <li class="nav-item dropdown">
+                                                                                    <a class="nav-link" href="/bongaigaon-refinery">
+                                                                                        Bongaigaon Refinery
+                                                                                    </a>
+                                                                            </li>
+                                                                            <li class="nav-item dropdown">
+                                                                                    <a class="nav-link" href="/barauni-refinery">
+                                                                                        Barauni Refinery
+                                                                                    </a>
+                                                                            </li>
+                                                                            <li class="nav-item dropdown">
+                                                                                    <a class="nav-link" href="/paradip-refinery">
+                                                                                        Paradip Refinery
+                                                                                    </a>
+                                                                            </li>
+                                                                            <li class="nav-item dropdown">
+                                                                                    <a class="nav-link" href="/haldia-refinery">
+                                                                                        Haldia Refinery
+                                                                                    </a>
+                                                                            </li>
+                                                                            <li class="nav-item dropdown">
+                                                                                    <a class="nav-link" href="/mathura-refinery">
+                                                                                        Mathura Refinery
+                                                                                    </a>
+                                                                            </li>
+                                                                            <li class="nav-item dropdown">
+                                                                                    <a class="nav-link" href="/gujarat-refinery">
+                                                                                        Gujarat Refinery
+                                                                                    </a>
+                                                                            </li>
+                                                                            <li class="nav-item dropdown">
+                                                                                    <a class="nav-link" href="/pages/panipat-refinery">
+                                                                                        Panipat Refinery &amp; Petrochemical Complex
+                                                                                    </a>
+                                                                            </li>
+                                                                            <li class="nav-item dropdown">
+                                                                                    <a class="nav-link" href="/pages/guwahati-refinery">
+                                                                                        Guwahati Refinery
+                                                                                    </a>
+                                                                            </li>
+                                                                            <li class="nav-item dropdown">
+                                                                                    <a class="nav-link" href="/pages/digboi-refinery">
+                                                                                        Digboi Refinery
+                                                                                    </a>
+                                                                            </li>
+                                                                    </ul>
+                                                                </li>
+                                                                <li class="nav-item dropdown">
+                                                                        <a class="nav-link" href="javascript:void(0);">
+                                                                            Pipelines
+                                                                            <div class="nav-item-arrow"></div>
+                                                                        </a>
+                                                                    <ul>
+                                                                            <li class="nav-item dropdown">
+                                                                                    <a class="nav-link" href="/pages/CommonCarrierProductPipelines">
+                                                                                        Common Carrier Pipelines
+                                                                                    </a>
+                                                                            </li>
+                                                                            <li class="nav-item dropdown">
+                                                                                    <a class="nav-link" href="/Pages/pipelines-overview">
+                                                                                        Overview
+                                                                                    </a>
+                                                                            </li>
+                                                                            <li class="nav-item dropdown">
+                                                                                    <a class="nav-link" href="/projects-under-implementation">
+                                                                                        Projects under Implementation
+                                                                                    </a>
+                                                                            </li>
+                                                                            <li class="nav-item dropdown">
+                                                                                    <a class="nav-link" href="/crude-oil-pipelines">
+                                                                                        Crude Oil Pipelines
+                                                                                    </a>
+                                                                            </li>
+                                                                            <li class="nav-item dropdown">
+                                                                                    <a class="nav-link" href="/petroleum-product-pipelines">
+                                                                                        Petroleum Product Pipelines
+                                                                                    </a>
+                                                                            </li>
+                                                                            <li class="nav-item dropdown">
+                                                                                    <a class="nav-link" href="/gas-pipelines">
+                                                                                        Gas Pipelines
+                                                                                    </a>
+                                                                            </li>
+                                                                            <li class="nav-item dropdown">
+                                                                                    <a class="nav-link" href="/pipeline-safety">
+                                                                                        Pipeline Safety
+                                                                                    </a>
+                                                                            </li>
+                                                                            <li class="nav-item dropdown">
+                                                                                    <a class="nav-link" href="https://crossing.indianoilpipelines.in/Crossing/Account/Login?returnUrl=%2FCrossing">
+                                                                                        Pipeline Crossing Permission Portal
+                                                                                    </a>
+                                                                            </li>
+                                                                    </ul>
+                                                                </li>
+                                                                <li class="nav-item dropdown">
+                                                                        <a class="nav-link" href="/pages/r-and-d-centre">
+                                                                            Research &amp; Development
+                                                                        </a>
+                                                                </li>
+                                                                <li class="nav-item dropdown">
+                                                                        <a class="nav-link" href="/marketing">Marketing</a>
+                                                                </li>
+                                                                <li class="nav-item dropdown">
+                                                                        <a class="nav-link" href="/pages/Petrochemicals-Overview">
+                                                                            Petrochemicals
+                                                                        </a>
+                                                                </li>
+                                                                <li class="nav-item dropdown">
+                                                                        <a class="nav-link" href="javascript:void(0);">
+                                                                            Natural Gas
+                                                                            <div class="nav-item-arrow"></div>
+                                                                        </a>
+                                                                    <ul>
+                                                                            <li class="nav-item dropdown">
+                                                                                    <a class="nav-link" href="/pages/natural-gas-overview">
+                                                                                        Overview
+                                                                                    </a>
+                                                                            </li>
+                                                                            <li class="nav-item dropdown">
+                                                                                    <a class="nav-link" href="/natural-gas-properties">
+                                                                                        Natural Gas Properties
+                                                                                    </a>
+                                                                            </li>
+                                                                            <li class="nav-item dropdown">
+                                                                                    <a class="nav-link" href="/download/NaturalGas_Brochure.pdf">
+                                                                                        Natural Gas Brochure
+                                                                                    </a>
+                                                                            </li>
+                                                                    </ul>
+                                                                </li>
+                                                                <li class="nav-item dropdown">
+                                                                        <a class="nav-link" href="https://iocl.com/pages/cgd">
+                                                                            City Gas Distribution(CGD)
+                                                                        </a>
+                                                                </li>
+                                                                <li class="nav-item dropdown">
+                                                                        <a class="nav-link" href="/pages/exploration-and-production">
+                                                                            E&amp;P
+                                                                        </a>
+                                                                </li>
+                                                                <li class="nav-item dropdown">
+                                                                        <a class="nav-link" href="/explosives">Explosives</a>
+                                                                </li>
+                                                                <li class="nav-item dropdown">
+                                                                        <a class="nav-link" href="/cryogenics">Cryogenics</a>
+                                                                </li>
+                                                    </ul>
+                                                </li>
+                                                <li class="nav-item dropdown">
+                                                            <a class="nav-link" href="/our-locations">
+                                                                Our Locations
+                                                            </a>
+                                                </li>
+                                                <li class="nav-item dropdown">
+                                                        <a class="nav-link" href="javascript:void(0);">
+                                                            Our Group Companies &amp; JVs
+                                                            <div class="nav-item-arrow"></div>
+                                                        </a>
+                                                    <ul>
+                                                                <li class="nav-item dropdown">
+                                                                        <a class="nav-link" href="/pages/group-companies-overview">
+                                                                            Overview
+                                                                        </a>
+                                                                </li>
+                                                                <li class="nav-item dropdown">
+                                                                        <a class="nav-link" href="/lanka-ioc-plc">Lanka IOC PLC</a>
+                                                                </li>
+                                                                <li class="nav-item dropdown">
+                                                                        <a class="nav-link" href="/indianoil-mauritius-ltd">IndianOil Mauritius Ltd</a>
+                                                                </li>
+                                                                <li class="nav-item dropdown">
+                                                                        <a class="nav-link" href="/ioc-middle-east-fze">IOC Middle East FZE</a>
+                                                                </li>
+                                                                <li class="nav-item dropdown">
+                                                                        <a class="nav-link" href="/chennai-petroleum-corporation-limited">Chennai Petroleum Corporation Limited</a>
+                                                                </li>
+                                                                <li class="nav-item dropdown">
+                                                                        <a class="nav-link" href="/pages/IGCMIL">
+                                                                            IOC Global Capital Management IFSC Ltd
+                                                                        </a>
+                                                                </li>
+                                                    </ul>
+                                                </li>
+                                                <li class="nav-item dropdown">
+                                                            <a class="nav-link" href="/our-upcoming-projects">
+                                                                Our Upcoming Projects
+                                                            </a>
+                                                </li>
+                                                <li class="nav-item dropdown">
+                                                        <a class="nav-link" href="javascript:void(0);">
+                                                            Financial Performance
+                                                            <div class="nav-item-arrow"></div>
+                                                        </a>
+                                                    <ul>
+                                                                <li class="nav-item dropdown">
+                                                                        <a class="nav-link" href="/pages/FinancialResults">
+                                                                            Overview
+                                                                        </a>
+                                                                </li>
+                                                    </ul>
+                                                </li>
+                                                <li class="nav-item dropdown">
+                                                        <a class="nav-link" href="javascript:void(0);">
+                                                            Annual Reports
+                                                            <div class="nav-item-arrow"></div>
+                                                        </a>
+                                                    <ul>
+                                                                <li class="nav-item dropdown">
+                                                                        <a class="nav-link" href="/uploads/Annual_Report-2024-25/index.html">
+                                                                            Integrated Annual Report 2024-25
+                                                                        </a>
+                                                                </li>
+                                                                <li class="nav-item dropdown">
+                                                                        <a class="nav-link" href="/uploads/Annual_Report_2023-24/index.html">
+                                                                            Integrated Annual Report 2023-24
+                                                                        </a>
+                                                                </li>
+                                                                <li class="nav-item dropdown">
+                                                                        <a class="nav-link" href="https://iocl.com/contents/AnnualReportenglish_2022-23/index.html">
+                                                                            Integrated Annual Report 2022-23
+                                                                        </a>
+                                                                </li>
+                                                                <li class="nav-item dropdown">
+                                                                        <a class="nav-link" href="https://iocl.com/contents/AnnualReportenglish_2021-22/index.html">
+                                                                            Integrated Annual Report 2021-22
+                                                                        </a>
+                                                                </li>
+                                                                <li class="nav-item dropdown">
+                                                                        <a class="nav-link" href="/contents/integrated-annual-report-2020-21/index.html">
+                                                                            Integrated Annual Report 2020-21
+                                                                        </a>
+                                                                </li>
+                                                                <li class="nav-item dropdown">
+                                                                        <a class="nav-link" href="/pages/AnnualReports">
+                                                                            All Annual Reports
+                                                                        </a>
+                                                                </li>
+                                                    </ul>
+                                                </li>
+                                                <li class="nav-item dropdown">
+                                                        <a class="nav-link" href="javascript:void(0);">
+                                                            Vigilance
+                                                            <div class="nav-item-arrow"></div>
+                                                        </a>
+                                                    <ul>
+                                                                <li class="nav-item dropdown">
+                                                                        <a class="nav-link" href="/pages/Vigilance">
+                                                                            Chief Vigilance Officer
+                                                                        </a>
+                                                                </li>
+                                                                <li class="nav-item dropdown">
+                                                                        <a class="nav-link" href="/pages/MandateOfVigilanceDepartment">
+                                                                            Mandate Of Vigilance Department
+                                                                        </a>
+                                                                </li>
+                                                                <li class="nav-item dropdown">
+                                                                        <a class="nav-link" href="/pages/VigilanceSetupinIndianOil">
+                                                                            Vigilance Setup in IndianOil
+                                                                        </a>
+                                                                </li>
+                                                                <li class="nav-item dropdown">
+                                                                        <a class="nav-link" href="/pages/ContactVigilance">
+                                                                            Contact Vigilance
+                                                                        </a>
+                                                                </li>
+                                                    </ul>
+                                                </li>
+                                </ul>
+                        </li>
+                        <li class="has-sub">
+                                <a class="nav-link"> IndianOil For You <div class="nav-item-arrow"></div> </a>
+                                <ul>
+                                                <li class="nav-item dropdown">
+                                                        <a class="nav-link" href="javascript:void(0);">
+                                                            IndianOil for Motorists
+                                                            <div class="nav-item-arrow"></div>
+                                                        </a>
+                                                    <ul>
+                                                                <li class="nav-item dropdown">
+                                                                        <a class="nav-link" href="/pages/XP95">
+                                                                            XP95
+                                                                        </a>
+                                                                </li>
+                                                                <li class="nav-item dropdown">
+                                                                        <a class="nav-link" href="/pages/XtraGreen">
+                                                                            XtraGreen
+                                                                        </a>
+                                                                </li>
+                                                                <li class="nav-item dropdown">
+                                                                        <a class="nav-link" href="https://iocl.com/pages/cng">
+                                                                            Compressed Natural Gas(CNG)
+                                                                        </a>
+                                                                </li>
+                                                                <li class="nav-item dropdown">
+                                                                        <a class="nav-link" href="/petrol-gasoline">Petrol Gasoline</a>
+                                                                </li>
+                                                                <li class="nav-item dropdown">
+                                                                        <a class="nav-link" href="/high-speed-diesel">High Speed Diesel</a>
+                                                                </li>
+                                                                <li class="nav-item dropdown">
+                                                                        <a class="nav-link" href="/xp100">XP100</a>
+                                                                </li>
+                                                                <li class="nav-item dropdown">
+                                                                        <a class="nav-link" href="https://swagat.iocxtrapower.com/">
+                                                                            Swagat Retail Outlets
+                                                                        </a>
+                                                                </li>
+                                                                <li class="nav-item dropdown">
+                                                                        <a class="nav-link" href="javascript:void(0);">
+                                                                            SERVO Lubes  Greases
+                                                                            <div class="nav-item-arrow"></div>
+                                                                        </a>
+                                                                    <ul>
+                                                                            <li class="nav-item dropdown">
+                                                                                    <a class="nav-link" href="/pages/servo-lubes-and-greases-overview">
+                                                                                        Overview
+                                                                                    </a>
+                                                                            </li>
+                                                                            <li class="nav-item dropdown">
+                                                                                    <a class="nav-link" href="/automotive-greases">
+                                                                                        Automotive Greases
+                                                                                    </a>
+                                                                            </li>
+                                                                            <li class="nav-item dropdown">
+                                                                                    <a class="nav-link" href="/automotive-lubricating-oils">
+                                                                                        Automotive Lubricating Oils
+                                                                                    </a>
+                                                                            </li>
+                                                                            <li class="nav-item dropdown">
+                                                                                    <a class="nav-link" href="/automotive-speciality-oils">
+                                                                                        Automotive Speciality Oils
+                                                                                    </a>
+                                                                            </li>
+                                                                            <li class="nav-item dropdown">
+                                                                                    <a class="nav-link" href="https://cx.indianoil.in/EPICIOCL/faces/GrievanceMainPage.jspx">
+                                                                                        Feedback &amp; Suggestion
+                                                                                    </a>
+                                                                            </li>
+                                                                            <li class="nav-item dropdown">
+                                                                                    <a class="nav-link" href="/pages/LubesGreasesFAQ">
+                                                                                        Frequently Asked Questions
+                                                                                    </a>
+                                                                            </li>
+                                                                    </ul>
+                                                                </li>
+                                                                <li class="nav-item dropdown">
+                                                                        <a class="nav-link" href="/autogas-overview">
+                                                                            AutoGas
+                                                                        </a>
+                                                                </li>
+                                                                <li class="nav-item dropdown">
+                                                                        <a class="nav-link" href="https://associates.indianoil.co.in/PumpLocator/">
+                                                                            Fuel Station Locator
+                                                                        </a>
+                                                                </li>
+                                                                <li class="nav-item dropdown">
+                                                                        <a class="nav-link" href="/loyalty-programmes">Loyalty Programmes</a>
+                                                                </li>
+                                                                <li class="nav-item dropdown">
+                                                                        <a class="nav-link" href="/pages/XTRAPOWERFleetCard">
+                                                                            XTRAPOWER-Fleet Card
+                                                                        </a>
+                                                                </li>
+                                                    </ul>
+                                                </li>
+                                                <li class="nav-item dropdown">
+                                                        <a class="nav-link" href="javascript:void(0);">
+                                                            IndianOil for Households
+                                                            <div class="nav-item-arrow"></div>
+                                                        </a>
+                                                    <ul>
+                                                                <li class="nav-item dropdown">
+                                                                        <a class="nav-link" href="https://iocl.com/pages/PNGDomestic">
+                                                                            PNG Domestic
+                                                                        </a>
+                                                                </li>
+                                                                <li class="nav-item dropdown">
+                                                                        <a class="nav-link" href="javascript:void(0);">
+                                                                            Indane Cooking Gas
+                                                                            <div class="nav-item-arrow"></div>
+                                                                        </a>
+                                                                    <ul>
+                                                                            <li class="nav-item dropdown">
+                                                                                    <a class="nav-link" href="/indane-cooking-gas-overview">
+                                                                                        Overview
+                                                                                    </a>
+                                                                            </li>
+                                                                            <li class="nav-item dropdown">
+                                                                                    <a class="nav-link" href="/pages/chhotu-gas-cylinder">
+                                                                                        Chhotu 5 KG Free Trade LPG Cylinder
+                                                                                    </a>
+                                                                            </li>
+                                                                            <li class="nav-item dropdown">
+                                                                                    <a class="nav-link" href="/xtralite-cylinder">
+                                                                                        Indane xtralite cylinder
+                                                                                    </a>
+                                                                            </li>
+                                                                            <li class="nav-item dropdown">
+                                                                                    <a class="nav-link" href="/pages/MunnaFTLcylinder">
+                                                                                        Munna 2kg Cylinder
+                                                                                    </a>
+                                                                            </li>
+                                                                    </ul>
+                                                                </li>
+                                                                <li class="nav-item dropdown">
+                                                                        <a class="nav-link" href="/kerosene">Kerosene</a>
+                                                                </li>
+                                                                <li class="nav-item dropdown">
+                                                                        <a class="nav-link" href="/pages/non-fuel-products">
+                                                                            Non-Fuel products
+                                                                        </a>
+                                                                </li>
+                                                                <li class="nav-item dropdown">
+                                                                        <a class="nav-link" href="/lpg-services">LPG Services</a>
+                                                                </li>
+                                                    </ul>
+                                                </li>
+                                                <li class="nav-item dropdown">
+                                                        <a class="nav-link" href="javascript:void(0);">
+                                                            IndianOil for Businesses
+                                                            <div class="nav-item-arrow"></div>
+                                                        </a>
+                                                    <ul>
+                                                                <li class="nav-item dropdown">
+                                                                        <a class="nav-link" href="https://iocl.com/pages/SolarCooker">
+                                                                            Indoor Solar Cooking System
+                                                                        </a>
+                                                                </li>
+                                                                <li class="nav-item dropdown">
+                                                                        <a class="nav-link" href="javascript:void(0);">
+                                                                            Indane LPG
+                                                                            <div class="nav-item-arrow"></div>
+                                                                        </a>
+                                                                    <ul>
+                                                                            <li class="nav-item dropdown">
+                                                                                    <a class="nav-link" href="https://www.iocl.com/pages/Indane-LPG">
+                                                                                        Overview 
+                                                                                    </a>
+                                                                            </li>
+                                                                            <li class="nav-item dropdown">
+                                                                                    <a class="nav-link" href="/indane-xtratej">
+                                                                                        Indane XTRATEJ
+                                                                                    </a>
+                                                                            </li>
+                                                                            <li class="nav-item dropdown">
+                                                                                    <a class="nav-link" href="/indane-nanocut">
+                                                                                        Indane NANOCUT
+                                                                                    </a>
+                                                                            </li>
+                                                                            <li class="nav-item dropdown">
+                                                                                    <a class="nav-link" href="/reticulated-lpg">
+                                                                                        Reticulated LPG
+                                                                                    </a>
+                                                                            </li>
+                                                                            <li class="nav-item dropdown">
+                                                                                    <a class="nav-link" href="https://www.iocl.com/pages/chhotu-gas-cylinder">
+                                                                                        Indane Chhotu
+                                                                                    </a>
+                                                                            </li>
+                                                                    </ul>
+                                                                </li>
+                                                                <li class="nav-item dropdown">
+                                                                        <a class="nav-link" href="https://iocl.com/pages/PNGCommercial">
+                                                                            Piped Natural Gas - Industrial / Commercial (PNG - I &amp; C)
+                                                                        </a>
+                                                                </li>
+                                                                <li class="nav-item dropdown">
+                                                                        <a class="nav-link" href="javascript:void(0);">
+                                                                            Bulk Industrial Fuels
+                                                                            <div class="nav-item-arrow"></div>
+                                                                        </a>
+                                                                    <ul>
+                                                                            <li class="nav-item dropdown">
+                                                                                    <a class="nav-link" href="/pages/bulk-industrial-fuels-overview">
+                                                                                        Overview
+                                                                                    </a>
+                                                                            </li>
+                                                                            <li class="nav-item dropdown">
+                                                                                    <a class="nav-link" href="/light-diesel-oil">
+                                                                                        Light Diesel Oil
+                                                                                    </a>
+                                                                            </li>
+                                                                            <li class="nav-item dropdown">
+                                                                                    <a class="nav-link" href="/furnace-oil">
+                                                                                        Furnace Oil
+                                                                                    </a>
+                                                                            </li>
+                                                                    </ul>
+                                                                </li>
+                                                                <li class="nav-item dropdown">
+                                                                        <a class="nav-link" href="/pages/fuel-at-call">
+                                                                            Fuel@Call
+                                                                        </a>
+                                                                </li>
+                                                                <li class="nav-item dropdown">
+                                                                        <a class="nav-link" href="/aviation-fuel">Aviation Fuel</a>
+                                                                </li>
+                                                                <li class="nav-item dropdown">
+                                                                        <a class="nav-link" href="/pages/AVGAS">
+                                                                            AVGAS 100 LL
+                                                                        </a>
+                                                                </li>
+                                                                <li class="nav-item dropdown">
+                                                                        <a class="nav-link" href="/marine-oils">Marine Oils</a>
+                                                                </li>
+                                                                <li class="nav-item dropdown">
+                                                                        <a class="nav-link" href="javascript:void(0);">
+                                                                            Bitumen
+                                                                            <div class="nav-item-arrow"></div>
+                                                                        </a>
+                                                                    <ul>
+                                                                            <li class="nav-item dropdown">
+                                                                                    <a class="nav-link" href="/pages/bitumen-overview">
+                                                                                        Overview
+                                                                                    </a>
+                                                                            </li>
+                                                                            <li class="nav-item dropdown">
+                                                                                    <a class="nav-link" href="/specifications">
+                                                                                        Specifications
+                                                                                    </a>
+                                                                            </li>
+                                                                    </ul>
+                                                                </li>
+                                                                <li class="nav-item dropdown">
+                                                                        <a class="nav-link" href="javascript:void(0);">
+                                                                            SERVO Lubes &amp; Greases
+                                                                            <div class="nav-item-arrow"></div>
+                                                                        </a>
+                                                                    <ul>
+                                                                            <li class="nav-item dropdown">
+                                                                                    <a class="nav-link" href="/pages/servo-lubes-and-greases-overview">
+                                                                                        Overview
+                                                                                    </a>
+                                                                            </li>
+                                                                            <li class="nav-item dropdown">
+                                                                                    <a class="nav-link" href="/agricultural-spray-oils">
+                                                                                        Agricultural Spray Oils
+                                                                                    </a>
+                                                                            </li>
+                                                                            <li class="nav-item dropdown">
+                                                                                    <a class="nav-link" href="/industrial-greases">
+                                                                                        Industrial Greases
+                                                                                    </a>
+                                                                            </li>
+                                                                            <li class="nav-item dropdown">
+                                                                                    <a class="nav-link" href="/industrial-lubricating-oils">
+                                                                                        Industrial Lubricating Oils
+                                                                                    </a>
+                                                                            </li>
+                                                                            <li class="nav-item dropdown">
+                                                                                    <a class="nav-link" href="/industrial-speciality-oils">
+                                                                                        Industrial Speciality Oils
+                                                                                    </a>
+                                                                            </li>
+                                                                            <li class="nav-item dropdown">
+                                                                                    <a class="nav-link" href="/metal-working-oils">
+                                                                                        Metal Working Oils
+                                                                                    </a>
+                                                                            </li>
+                                                                            <li class="nav-item dropdown">
+                                                                                    <a class="nav-link" href="/railroad-greases">
+                                                                                        Railroad Greases
+                                                                                    </a>
+                                                                            </li>
+                                                                            <li class="nav-item dropdown">
+                                                                                    <a class="nav-link" href="/railroad-oils">
+                                                                                        Railroad Oils
+                                                                                    </a>
+                                                                            </li>
+                                                                    </ul>
+                                                                </li>
+                                                                <li class="nav-item dropdown">
+                                                                        <a class="nav-link" href="/fuel-mgmt-consumer-pumps">Fuel Mgmt Consumer Pumps</a>
+                                                                </li>
+                                                                <li class="nav-item dropdown">
+                                                                        <a class="nav-link" href="/non-fuel-alliances">Non Fuel Alliances</a>
+                                                                </li>
+                                                                <li class="nav-item dropdown">
+                                                                        <a class="nav-link" href="/marketing-loyalty-programs">Marketing Loyalty Programs</a>
+                                                                </li>
+                                                                <li class="nav-item dropdown">
+                                                                        <a class="nav-link" href="javascript:void(0);">
+                                                                            Natural Gas
+                                                                            <div class="nav-item-arrow"></div>
+                                                                        </a>
+                                                                    <ul>
+                                                                            <li class="nav-item dropdown">
+                                                                                    <a class="nav-link" href="/pages/Natural-Gas-Overview">
+                                                                                        Overview
+                                                                                    </a>
+                                                                            </li>
+                                                                            <li class="nav-item dropdown">
+                                                                                    <a class="nav-link" href="/natural-gas-properties">
+                                                                                        Natural Gas Properties
+                                                                                    </a>
+                                                                            </li>
+                                                                            <li class="nav-item dropdown">
+                                                                                    <a class="nav-link" href="https://iocl.com/pages/Application-for-New-CGD-Customer-connectivity">
+                                                                                        Application for New CGD Customer connectivity
+                                                                                    </a>
+                                                                            </li>
+                                                                    </ul>
+                                                                </li>
+                                                                <li class="nav-item dropdown">
+                                                                        <a class="nav-link" href="javascript:void(0);">
+                                                                            Petrochemicals
+                                                                            <div class="nav-item-arrow"></div>
+                                                                        </a>
+                                                                    <ul>
+                                                                            <li class="nav-item dropdown">
+                                                                                    <a class="nav-link" href="/pages/petrochemicals-overview">
+                                                                                        Overview
+                                                                                    </a>
+                                                                            </li>
+                                                                            <li class="nav-item dropdown">
+                                                                                    <a class="nav-link" href="/glycols">
+                                                                                        Glycols
+                                                                                    </a>
+                                                                            </li>
+                                                                            <li class="nav-item dropdown">
+                                                                                    <a class="nav-link" href="/lab">
+                                                                                        LAB
+                                                                                    </a>
+                                                                            </li>
+                                                                            <li class="nav-item dropdown">
+                                                                                    <a class="nav-link" href="/polymers">
+                                                                                        Polymers
+                                                                                    </a>
+                                                                            </li>
+                                                                            <li class="nav-item dropdown">
+                                                                                    <a class="nav-link" href="/pta">
+                                                                                        PTA
+                                                                                    </a>
+                                                                            </li>
+                                                                            <li class="nav-item dropdown">
+                                                                                    <a class="nav-link" href="/butadiene">
+                                                                                        Butadiene
+                                                                                    </a>
+                                                                            </li>
+                                                                            <li class="nav-item dropdown">
+                                                                                    <a class="nav-link" href="https://iocl.com/pages/ButylAcrylate">
+                                                                                        Butyl Acrylate
+                                                                                    </a>
+                                                                            </li>
+                                                                    </ul>
+                                                                </li>
+                                                                <li class="nav-item dropdown">
+                                                                        <a class="nav-link" href="javascript:void(0);">
+                                                                            Special Products
+                                                                            <div class="nav-item-arrow"></div>
+                                                                        </a>
+                                                                    <ul>
+                                                                            <li class="nav-item dropdown">
+                                                                                    <a class="nav-link" href="/pages/special-products-overview">
+                                                                                        Overview
+                                                                                    </a>
+                                                                            </li>
+                                                                            <li class="nav-item dropdown">
+                                                                                    <a class="nav-link" href="/benzene">
+                                                                                        Benzene
+                                                                                    </a>
+                                                                            </li>
+                                                                            <li class="nav-item dropdown">
+                                                                                    <a class="nav-link" href="/cbfs">
+                                                                                        CBFS
+                                                                                    </a>
+                                                                            </li>
+                                                                            <li class="nav-item dropdown">
+                                                                                    <a class="nav-link" href="/food-grade-hexane">
+                                                                                        Food Grade Hexane
+                                                                                    </a>
+                                                                            </li>
+                                                                            <li class="nav-item dropdown">
+                                                                                    <a class="nav-link" href="/jute-batching-oil">
+                                                                                        Jute Batching Oil
+                                                                                    </a>
+                                                                            </li>
+                                                                            <li class="nav-item dropdown">
+                                                                                    <a class="nav-link" href="/paraffin-wax">
+                                                                                        Paraffin Wax
+                                                                                    </a>
+                                                                            </li>
+                                                                            <li class="nav-item dropdown">
+                                                                                    <a class="nav-link" href="/propylene">
+                                                                                        Propylene
+                                                                                    </a>
+                                                                            </li>
+                                                                            <li class="nav-item dropdown">
+                                                                                    <a class="nav-link" href="/raw-petroleum-coke">
+                                                                                        Raw Petroleum Coke
+                                                                                    </a>
+                                                                            </li>
+                                                                            <li class="nav-item dropdown">
+                                                                                    <a class="nav-link" href="/sulphur">
+                                                                                        Sulphur
+                                                                                    </a>
+                                                                            </li>
+                                                                            <li class="nav-item dropdown">
+                                                                                    <a class="nav-link" href="/rhinowax">
+                                                                                        Rhinowax
+                                                                                    </a>
+                                                                            </li>
+                                                                    </ul>
+                                                                </li>
+                                                                <li class="nav-item dropdown">
+                                                                        <a class="nav-link" href="/cryogenics">Cryogenics</a>
+                                                                </li>
+                                                                <li class="nav-item dropdown">
+                                                                        <a class="nav-link" href="/non-pds-superior-kerosene-oil">Non PDS Superior Kerosene Oil</a>
+                                                                </li>
+                                                                <li class="nav-item dropdown">
+                                                                        <a class="nav-link" href="/explosives">Explosives</a>
+                                                                </li>
+                                                                <li class="nav-item dropdown">
+                                                                        <a class="nav-link" href="javascript:void(0);">
+                                                                            Consultancy
+                                                                            <div class="nav-item-arrow"></div>
+                                                                        </a>
+                                                                    <ul>
+                                                                            <li class="nav-item dropdown">
+                                                                                    <a class="nav-link" href="/pages/consultancy-overview">
+                                                                                        Overview
+                                                                                    </a>
+                                                                            </li>
+                                                                            <li class="nav-item dropdown">
+                                                                                    <a class="nav-link" href="/refining-consultancy">
+                                                                                        Refining Consultancy
+                                                                                    </a>
+                                                                            </li>
+                                                                            <li class="nav-item dropdown">
+                                                                                    <a class="nav-link" href="/Pipeline">
+                                                                                        Pipeline Consultancy
+                                                                                    </a>
+                                                                            </li>
+                                                                    </ul>
+                                                                </li>
+                                                                <li class="nav-item dropdown">
+                                                                        <a class="nav-link" href="/pages/licensing-of-technologies">
+                                                                            Technologies for Licensing
+                                                                        </a>
+                                                                </li>
+                                                    </ul>
+                                                </li>
+                                                <li class="nav-item dropdown">
+                                                        <a class="nav-link" href="javascript:void(0);">
+                                                            IndianOil for Society
+                                                            <div class="nav-item-arrow"></div>
+                                                        </a>
+                                                    <ul>
+                                                                <li class="nav-item dropdown">
+                                                                        <a class="nav-link" href="/pages/csr-overview">
+                                                                            IndianOil for Community (CSR)
+                                                                        </a>
+                                                                </li>
+                                                                <li class="nav-item dropdown">
+                                                                        <a class="nav-link" href="javascript:void(0);">
+                                                                            IndianOil Academic Scholarships
+                                                                            <div class="nav-item-arrow"></div>
+                                                                        </a>
+                                                                    <ul>
+                                                                            <li class="nav-item dropdown">
+                                                                                    <a class="nav-link" href="/global-compact-initiative">
+                                                                                        Global Compact Initiative
+                                                                                    </a>
+                                                                            </li>
+                                                                            <li class="nav-item dropdown">
+                                                                                    <a class="nav-link" href="/scholarships-archive">
+                                                                                        Scholarships Archive
+                                                                                    </a>
+                                                                            </li>
+                                                                    </ul>
+                                                                </li>
+                                                                <li class="nav-item dropdown">
+                                                                        <a class="nav-link" href="/pages/Sports-Scholarship">
+                                                                            IndianOil Sports Scholarship
+                                                                        </a>
+                                                                </li>
+                                                                <li class="nav-item dropdown">
+                                                                        <a class="nav-link" href="/sustainability">Sustainability</a>
+                                                                </li>
+                                                                <li class="nav-item dropdown">
+                                                                        <a class="nav-link" href="javascript:void(0);">
+                                                                            The IndianOil Foundation
+                                                                            <div class="nav-item-arrow"></div>
+                                                                        </a>
+                                                                    <ul>
+                                                                            <li class="nav-item dropdown">
+                                                                                    <a class="nav-link" href="/pages/indianoil-foundation-overview">
+                                                                                        Overview
+                                                                                    </a>
+                                                                            </li>
+                                                                            <li class="nav-item dropdown">
+                                                                                    <a class="nav-link" href="/download/IOF-Arkakshetra_Eng.pdf">
+                                                                                        Arka Kshetra
+                                                                                    </a>
+                                                                            </li>
+                                                                    </ul>
+                                                                </li>
+                                                    </ul>
+                                                </li>
+                                                <li class="nav-item dropdown">
+                                                        <a class="nav-link" href="javascript:void(0);">
+                                                            IndianOil for Suppliers
+                                                            <div class="nav-item-arrow"></div>
+                                                        </a>
+                                                    <ul>
+                                                                <li class="nav-item dropdown">
+                                                                        <a class="nav-link" href="https://iocl.com/uploads/holiday2023.pdf">
+                                                                            Holiday Listing Guidelines
+                                                                        </a>
+                                                                </li>
+                                                                <li class="nav-item dropdown">
+                                                                        <a class="nav-link" href="/Contents/Upload/Future_Procurement_Plan25-26.pdf">
+                                                                            Future Procurement Plan
+                                                                        </a>
+                                                                </li>
+                                                                <li class="nav-item dropdown">
+                                                                        <a class="nav-link" href="/download/IOCL_Future_Shipping_Requirement_2022-23.pdf">
+                                                                            Future Shipping Requirements
+                                                                        </a>
+                                                                </li>
+                                                                <li class="nav-item dropdown">
+                                                                        <a class="nav-link" href="https://iochospitalempanelment.in/">
+                                                                            Hospital Nomination
+                                                                        </a>
+                                                                </li>
+                                                                <li class="nav-item dropdown">
+                                                                        <a class="nav-link" href="/download/ConciliationRules.pdf">
+                                                                            IndianOil Conciliation Rules, 2014
+                                                                        </a>
+                                                                </li>
+                                                                <li class="nav-item dropdown">
+                                                                        <a class="nav-link" href="/download/GSTIN-22082017.pdf">
+                                                                            IndianOil GSTIN
+                                                                        </a>
+                                                                </li>
+                                                                <li class="nav-item dropdown">
+                                                                        <a class="nav-link" href="/integrity-pact">Integrity Pact</a>
+                                                                </li>
+                                                                <li class="nav-item dropdown">
+                                                                        <a class="nav-link" href="/procurement-from-mses">Procurement from MSEs</a>
+                                                                </li>
+                                                                <li class="nav-item dropdown">
+                                                                        <a class="nav-link" href="https://spandan.indianoil.co.in/BPSP/RoKskLinkPage_COIS.jsp?LOCATION_TYPE=LPG&amp;DOC=50">
+                                                                            Reports on Purchase / Work Order
+                                                                        </a>
+                                                                </li>
+                                                                <li class="nav-item dropdown">
+                                                                        <a class="nav-link" href="/suppliers-notices">Suppliers Notices</a>
+                                                                </li>
+                                                                <li class="nav-item dropdown">
+                                                                        <a class="nav-link" href="https://iocletenders.nic.in/nicgep/app">
+                                                                            Tenders
+                                                                        </a>
+                                                                </li>
+                                                                <li class="nav-item dropdown">
+                                                                        <a class="nav-link" href="javascript:void(0);">
+                                                                            Vendor Registration
+                                                                            <div class="nav-item-arrow"></div>
+                                                                        </a>
+                                                                    <ul>
+                                                                            <li class="nav-item dropdown">
+                                                                                    <a class="nav-link" href="/pages/vendor-registration-overview">
+                                                                                        Overview
+                                                                                    </a>
+                                                                            </li>
+                                                                            <li class="nav-item dropdown">
+                                                                                    <a class="nav-link" href="/import-export">
+                                                                                        Import Export
+                                                                                    </a>
+                                                                            </li>
+                                                                            <li class="nav-item dropdown">
+                                                                                    <a class="nav-link" href="/ship-chartering">
+                                                                                        Ship Chartering
+                                                                                    </a>
+                                                                            </li>
+                                                                    </ul>
+                                                                </li>
+                                                                <li class="nav-item dropdown">
+                                                                        <a class="nav-link" href="https://associates.indianoil.co.in/Vendor/">
+                                                                            Vendor Payment Status
+                                                                        </a>
+                                                                </li>
+                                                    </ul>
+                                                </li>
+                                                <li class="nav-item dropdown">
+                                                        <a class="nav-link" href="javascript:void(0);">
+                                                            IndianOil for Business Partners
+                                                            <div class="nav-item-arrow"></div>
+                                                        </a>
+                                                    <ul>
+                                                                <li class="nav-item dropdown">
+                                                                        <a class="nav-link" href="javascript:void(0);">
+                                                                            RO &amp; KSK Dealerships
+                                                                            <div class="nav-item-arrow"></div>
+                                                                        </a>
+                                                                    <ul>
+                                                                            <li class="nav-item dropdown">
+                                                                                    <a class="nav-link" href="/pages/ro-ksk-dealerships-overview">
+                                                                                        Overview
+                                                                                    </a>
+                                                                            </li>
+                                                                            <li class="nav-item dropdown">
+                                                                                    <a class="nav-link" href="/uploads/Empanelment_of_Govt_approved.pdf">
+                                                                                        Notice
+                                                                                    </a>
+                                                                            </li>
+                                                                            <li class="nav-item dropdown">
+                                                                                    <a class="nav-link" href="/guidelines">
+                                                                                        Guidelines
+                                                                                    </a>
+                                                                            </li>
+                                                                            <li class="nav-item dropdown">
+                                                                                    <a class="nav-link" href="/ads-for-ro-dealerships">
+                                                                                        Ads For RO dealerships
+                                                                                    </a>
+                                                                            </li>
+                                                                            <li class="nav-item dropdown">
+                                                                                    <a class="nav-link" href="/reconstitution-guidelines">
+                                                                                        Reconstitution Guidelines
+                                                                                    </a>
+                                                                            </li>
+                                                                    </ul>
+                                                                </li>
+                                                                <li class="nav-item dropdown">
+                                                                        <a class="nav-link" href="/door-to-door-delivery-of-diesel">Door to Door Delivery of Diesel</a>
+                                                                </li>
+                                                                <li class="nav-item dropdown">
+                                                                        <a class="nav-link" href="javascript:void(0);">
+                                                                            LPG Distributorships
+                                                                            <div class="nav-item-arrow"></div>
+                                                                        </a>
+                                                                    <ul>
+                                                                            <li class="nav-item dropdown">
+                                                                                    <a class="nav-link" href="/pages/lpg-distributorships-overview">
+                                                                                        Overview
+                                                                                    </a>
+                                                                            </li>
+                                                                            <li class="nav-item dropdown">
+                                                                                    <a class="nav-link" href="/pages/lpg-distributorships-guidelines">
+                                                                                        Guidelines
+                                                                                    </a>
+                                                                            </li>
+                                                                    </ul>
+                                                                </li>
+                                                                <li class="nav-item dropdown">
+                                                                        <a class="nav-link" href="javascript:void(0);">
+                                                                            COCO Divestment and Service Provider
+                                                                            <div class="nav-item-arrow"></div>
+                                                                        </a>
+                                                                    <ul>
+                                                                            <li class="nav-item dropdown">
+                                                                                    <a class="nav-link" href="/coco-divestment-and-service-provider">
+                                                                                        Overview
+                                                                                    </a>
+                                                                            </li>
+                                                                            <li class="nav-item dropdown">
+                                                                                    <a class="nav-link" href="/uploads/Brochure_on_selection_of_Service_Provider_for_COCO.pdf">
+                                                                                        Guidelines for Selection of COCO Service Provider
+                                                                                    </a>
+                                                                            </li>
+                                                                    </ul>
+                                                                </li>
+                                                                <li class="nav-item dropdown">
+                                                                        <a class="nav-link" href="/polymer-dealers">Polymer Dealers</a>
+                                                                </li>
+                                                                <li class="nav-item dropdown">
+                                                                        <a class="nav-link" href="https://oilgasbidding.eproc.in/">
+                                                                            Gas Bidding Portal
+                                                                        </a>
+                                                                </li>
+                                                                <li class="nav-item dropdown">
+                                                                        <a class="nav-link" href="/marketing-discipline-guidelines">Marketing Discipline Guidelines</a>
+                                                                </li>
+                                                    </ul>
+                                                </li>
+                                                <li class="nav-item dropdown">
+                                                        <a class="nav-link" href="javascript:void(0);">
+                                                            IndianOil for Investors
+                                                            <div class="nav-item-arrow"></div>
+                                                        </a>
+                                                    <ul>
+                                                                <li class="nav-item dropdown">
+                                                                        <a class="nav-link" href="javascript:void(0);">
+                                                                            Disclosure for Investors &#x2013; Reg. 46 &amp; 62 of SEBI (LODR)
+                                                                            <div class="nav-item-arrow"></div>
+                                                                        </a>
+                                                                    <ul>
+                                                                            <li class="nav-item dropdown">
+                                                                                    <a class="nav-link" href="/pages/AnnualReports">
+                                                                                        Annual Report
+                                                                                    </a>
+                                                                            </li>
+                                                                            <li class="nav-item dropdown">
+                                                                                    <a class="nav-link" href="/annual-return">
+                                                                                        Annual Return
+                                                                                    </a>
+                                                                            </li>
+                                                                            <li class="nav-item dropdown">
+                                                                                    <a class="nav-link" href="https://iocl.com/pages/Annual%20General%20Meeting">
+                                                                                         Annual General Meeting
+                                                                                    </a>
+                                                                            </li>
+                                                                            <li class="nav-item dropdown">
+                                                                                    <a class="nav-link" href="/business-responsibility-report">
+                                                                                        Business Responsibility Report
+                                                                                    </a>
+                                                                            </li>
+                                                                            <li class="nav-item dropdown">
+                                                                                    <a class="nav-link" href="/buyback-of-shares-by-indianoil">
+                                                                                        Buyback of shares by IndianOil
+                                                                                    </a>
+                                                                            </li>
+                                                                            <li class="nav-item dropdown">
+                                                                                    <a class="nav-link" href="https://iocl.com/InvestorCenter/PDF/Board-Committees12092025.pdf">
+                                                                                        Committees of the Board
+                                                                                    </a>
+                                                                            </li>
+                                                                            <li class="nav-item dropdown">
+                                                                                    <a class="nav-link" href="/pages/investor-centre">
+                                                                                         Contact details for share related matters
+                                                                                    </a>
+                                                                            </li>
+                                                                            <li class="nav-item dropdown">
+                                                                                    <a class="nav-link" href="/corporate-governance">
+                                                                                        Corporate Governance
+                                                                                    </a>
+                                                                            </li>
+                                                                            <li class="nav-item dropdown">
+                                                                                    <a class="nav-link" href="/dividend-information">
+                                                                                        Dividend Information
+                                                                                    </a>
+                                                                            </li>
+                                                                            <li class="nav-item dropdown">
+                                                                                    <a class="nav-link" href="/pages/FinancialResults">
+                                                                                        Financial Performance
+                                                                                    </a>
+                                                                            </li>
+                                                                            <li class="nav-item dropdown">
+                                                                                    <a class="nav-link" href="/download/IDFP2025.pdf">
+                                                                                        Familiarisation program for Ind. Directors
+                                                                                    </a>
+                                                                            </li>
+                                                                            <li class="nav-item dropdown">
+                                                                                    <a class="nav-link" href="/download/IndianOil-Credit-Ratings.pdf">
+                                                                                         IndianOil&#x27;s Credit Rating
+                                                                                    </a>
+                                                                            </li>
+                                                                            <li class="nav-item dropdown">
+                                                                                    <a class="nav-link" href="/intimation-stock-exchange">
+                                                                                        Intimation To Stock Exchange
+                                                                                    </a>
+                                                                            </li>
+                                                                            <li class="nav-item dropdown">
+                                                                                    <a class="nav-link" href="/pages/notices-overview">
+                                                                                        Investors Notices
+                                                                                    </a>
+                                                                            </li>
+                                                                            <li class="nav-item dropdown">
+                                                                                    <a class="nav-link" href="https://iocl.com/pages/KYC-updation-for-physical-shareholders">
+                                                                                        KYC updation for physical shareholders
+                                                                                    </a>
+                                                                            </li>
+                                                                            <li class="nav-item dropdown">
+                                                                                    <a class="nav-link" href="/uploads/IOCLMoAAoAWebsiteHosting.pdf">
+                                                                                        Memorandum Of Association And Articles of Association
+                                                                                    </a>
+                                                                            </li>
+                                                                            <li class="nav-item dropdown">
+                                                                                    <a class="nav-link" href="https://iocl.com/pages/ModeltripartiteagreementbetweentheissuerexistingSTAandnewSTA">
+                                                                                        Model tripartite agreement between the issuer, existing STA and new STA
+                                                                                    </a>
+                                                                            </li>
+                                                                            <li class="nav-item dropdown">
+                                                                                    <a class="nav-link" href="/policies">
+                                                                                        Policies
+                                                                                    </a>
+                                                                            </li>
+                                                                            <li class="nav-item dropdown">
+                                                                                    <a class="nav-link" href="/postal-ballot">
+                                                                                        Postal Ballot
+                                                                                    </a>
+                                                                            </li>
+                                                                            <li class="nav-item dropdown">
+                                                                                    <a class="nav-link" href="/pages/conference-call-with-analysts-investors">
+                                                                                        Conference call with Analysts/ Investors
+                                                                                    </a>
+                                                                            </li>
+                                                                            <li class="nav-item dropdown">
+                                                                                    <a class="nav-link" href="/pages/SakshamNiveshak">
+                                                                                        Saksham Niveshak
+                                                                                    </a>
+                                                                            </li>
+                                                                            <li class="nav-item dropdown">
+                                                                                    <a class="nav-link" href="/shareholding-pattern">
+                                                                                        Shareholding Pattern
+                                                                                    </a>
+                                                                            </li>
+                                                                            <li class="nav-item dropdown">
+                                                                                    <a class="nav-link" href="/InvestorCenter/PDF/IndependentDirectors.pdf">
+                                                                                        T&amp;C for appointment of ID
+                                                                                    </a>
+                                                                            </li>
+                                                                            <li class="nav-item dropdown">
+                                                                                    <a class="nav-link" href="/transfer-of-shares-to-iepf">
+                                                                                        Transfer of shares to IEPF
+                                                                                    </a>
+                                                                            </li>
+                                                                    </ul>
+                                                                </li>
+                                                    </ul>
+                                                </li>
+                                                <li class="nav-item dropdown">
+                                                        <a class="nav-link" href="javascript:void(0);">
+                                                            IndianOil Overseas
+                                                            <div class="nav-item-arrow"></div>
+                                                        </a>
+                                                    <ul>
+                                                                <li class="nav-item dropdown">
+                                                                        <a class="nav-link" href="/lanka-ioc-plc">Lanka IOC PLC</a>
+                                                                </li>
+                                                                <li class="nav-item dropdown">
+                                                                        <a class="nav-link" href="/indianoil-mauritius-ltd">
+                                                                            IndianOil (Mauritius) Ltd.
+                                                                        </a>
+                                                                </li>
+                                                                <li class="nav-item dropdown">
+                                                                        <a class="nav-link" href="/ioc-middle-east-fze">IOC Middle East FZE</a>
+                                                                </li>
+                                                    </ul>
+                                                </li>
+                                                <li class="nav-item dropdown">
+                                                        <a class="nav-link" href="javascript:void(0);">
+                                                            IndianOil for Sports
+                                                            <div class="nav-item-arrow"></div>
+                                                        </a>
+                                                    <ul>
+                                                                <li class="nav-item dropdown">
+                                                                        <a class="nav-link" href="/pages/Sportsoverview">
+                                                                            Sports Overview
+                                                                        </a>
+                                                                </li>
+                                                                <li class="nav-item dropdown">
+                                                                        <a class="nav-link" href="/pages/SportsUpdates">
+                                                                            Sports Updates
+                                                                        </a>
+                                                                </li>
+                                                                <li class="nav-item dropdown">
+                                                                        <a class="nav-link" href="/pages/IndianOilSportsStars">
+                                                                            IndianOil Sports Stars
+                                                                        </a>
+                                                                </li>
+                                                                <li class="nav-item dropdown">
+                                                                        <a class="nav-link" href="/pages/SportsScholarships">
+                                                                            Sports Scholarships
+                                                                        </a>
+                                                                </li>
+                                                                <li class="nav-item dropdown">
+                                                                        <a class="nav-link" href="/pages/SportsAwardsAccolades">
+                                                                            Sports Awards &amp; Accolades
+                                                                        </a>
+                                                                </li>
+                                                    </ul>
+                                                </li>
+                                                <li class="nav-item dropdown">
+                                                        <a class="nav-link" href="javascript:void(0);">
+                                                            IndianOil for Media
+                                                            <div class="nav-item-arrow"></div>
+                                                        </a>
+                                                    <ul>
+                                                                <li class="nav-item dropdown">
+                                                                        <a class="nav-link" href="/news-releases">
+                                                                            News Releases
+                                                                        </a>
+                                                                </li>
+                                                                <li class="nav-item dropdown">
+                                                                        <a class="nav-link" href="javascript:void(0);">
+                                                                            Publications
+                                                                            <div class="nav-item-arrow"></div>
+                                                                        </a>
+                                                                    <ul>
+                                                                            <li class="nav-item dropdown">
+                                                                                    <a class="nav-link" href="/pages/publications-overview">
+                                                                                        Overview
+                                                                                    </a>
+                                                                            </li>
+                                                                            <li class="nav-item dropdown">
+                                                                                    <a class="nav-link" href="/prestige-publications-of-indianoil">
+                                                                                        Prestige Publications of IndianOil
+                                                                                    </a>
+                                                                            </li>
+                                                                            <li class="nav-item dropdown">
+                                                                                    <a class="nav-link" href="https://hrvista.in/">
+                                                                                        HR Vista
+                                                                                    </a>
+                                                                            </li>
+                                                                    </ul>
+                                                                </li>
+                                                                <li class="nav-item dropdown">
+                                                                        <a class="nav-link" href="/prices-of-petroleum-products">
+                                                                            Prices of Petroleum Products
+                                                                        </a>
+                                                                </li>
+                                                                <li class="nav-item dropdown">
+                                                                        <a class="nav-link" href="/petrol-diesel-price">
+                                                                            Prices of Petrol &amp; Diesel
+                                                                        </a>
+                                                                </li>
+                                                                <li class="nav-item dropdown">
+                                                                        <a class="nav-link" href="javascript:void(0);">
+                                                                            Events
+                                                                            <div class="nav-item-arrow"></div>
+                                                                        </a>
+                                                                    <ul>
+                                                                            <li class="nav-item dropdown">
+                                                                                    <a class="nav-link" href="/pages/iew">
+                                                                                        India Energy Week 2023
+                                                                                    </a>
+                                                                            </li>
+                                                                    </ul>
+                                                                </li>
+                                                    </ul>
+                                                </li>
+                                                <li class="nav-item dropdown">
+                                                        <a class="nav-link" href="javascript:void(0);">
+                                                            IndianOil for Careers
+                                                            <div class="nav-item-arrow"></div>
+                                                        </a>
+                                                    <ul>
+                                                                <li class="nav-item dropdown">
+                                                                        <a class="nav-link" href="javascript:void(0);">
+                                                                            Careers
+                                                                            <div class="nav-item-arrow"></div>
+                                                                        </a>
+                                                                    <ul>
+                                                                            <li class="nav-item dropdown">
+                                                                                    <a class="nav-link" href="/pages/careers-overview">
+                                                                                        Overview
+                                                                                    </a>
+                                                                            </li>
+                                                                            <li class="nav-item dropdown">
+                                                                                    <a class="nav-link" href="/indianoil-institute-of-petroleum-management--(iipm)">
+                                                                                        IndianOil Institute of Petroleum Management  (IiPM)
+                                                                                    </a>
+                                                                            </li>
+                                                                    </ul>
+                                                                </li>
+                                                                <li class="nav-item dropdown">
+                                                                        <a class="nav-link" href="javascript:void(0);">
+                                                                            Latest Job Opening
+                                                                            <div class="nav-item-arrow"></div>
+                                                                        </a>
+                                                                    <ul>
+                                                                            <li class="nav-item dropdown">
+                                                                                    <a class="nav-link" href="/latest-job-opening">
+                                                                                        Job Opening
+                                                                                    </a>
+                                                                            </li>
+                                                                            <li class="nav-item dropdown">
+                                                                                    <a class="nav-link" href="/job-postings-archive">
+                                                                                        Job Postings Archive
+                                                                                    </a>
+                                                                            </li>
+                                                                    </ul>
+                                                                </li>
+                                                                <li class="nav-item dropdown">
+                                                                        <a class="nav-link" href="/apprenticeships">
+                                                                            Apprenticeships
+                                                                        </a>
+                                                                </li>
+                                                    </ul>
+                                                </li>
+                                </ul>
+                        </li>
+                        <li class="has-sub">
+                                <a class="nav-link"> IndianOil for Environment <div class="nav-item-arrow"></div> </a>
+                                <ul>
+                                                <li class="nav-item dropdown">
+                                                            <a class="nav-link" href="/sustainability">
+                                                                Sustainability
+                                                            </a>
+                                                </li>
+                                                <li class="nav-item dropdown">
+                                                        <a class="nav-link" href="https://iocl.com/pages/NetZeroone">
+                                                            IndianOil&#x27;s Net Zero Goal
+                                                        </a>
+                                                </li>
+                                                <li class="nav-item dropdown">
+                                                            <a class="nav-link" href="/environment-management">
+                                                                Environment Management
+                                                            </a>
+                                                </li>
+                                                <li class="nav-item dropdown">
+                                                        <a class="nav-link" href="javascript:void(0);">
+                                                            SATAT
+                                                            <div class="nav-item-arrow"></div>
+                                                        </a>
+                                                    <ul>
+                                                                <li class="nav-item dropdown">
+                                                                        <a class="nav-link" href="/pages/satat-overview">
+                                                                            Overview
+                                                                        </a>
+                                                                </li>
+                                                                <li class="nav-item dropdown">
+                                                                        <a class="nav-link" href="/learning-modules">Learning Modules</a>
+                                                                </li>
+                                                                <li class="nav-item dropdown">
+                                                                        <a class="nav-link" href="/related-links-of-satat">Related Links of Satat</a>
+                                                                </li>
+                                                    </ul>
+                                                </li>
+                                                <li class="nav-item dropdown">
+                                                        <a class="nav-link" href="/pages/h-s-and-e-policy">
+                                                            H,S &amp; E Policy
+                                                        </a>
+                                                </li>
+                                                <li class="nav-item dropdown">
+                                                            <a class="nav-link" href="/occupational-health">
+                                                                Occupational Health
+                                                            </a>
+                                                </li>
+                                                <li class="nav-item dropdown">
+                                                            <a class="nav-link" href="/safety">
+                                                                Safety
+                                                            </a>
+                                                </li>
+                                                <li class="nav-item dropdown">
+                                                            <a class="nav-link" href="/green-fuel-alternatives">
+                                                                Green Fuel Alternatives
+                                                            </a>
+                                                </li>
+                                                <li class="nav-item dropdown">
+                                                            <a class="nav-link" href="/environment">
+                                                                Environment
+                                                            </a>
+                                                </li>
+                                </ul>
+                        </li>
+                        <li class="has-sub">
+                                <a class="nav-link"> We are Listening <div class="nav-item-arrow"></div> </a>
+                                <ul>
+                                                <li class="nav-item dropdown">
+                                                            <a class="nav-link" href="/help">
+                                                                Help
+                                                            </a>
+                                                </li>
+                                                <li class="nav-item dropdown">
+                                                        <a class="nav-link" href="https://cx.indianoil.in/EPICIOCL/faces/GrievanceMainPage.jspx">
+                                                            PaHal-Related Queries
+                                                        </a>
+                                                </li>
+                                                <li class="nav-item dropdown">
+                                                        <a class="nav-link" href="https://cx.indianoil.in/EPICIOCL/faces/GrievanceMainPage.jspx">
+                                                            Other LPG Queries
+                                                        </a>
+                                                </li>
+                                                <li class="nav-item dropdown">
+                                                        <a class="nav-link" href="https://cx.indianoil.in/EPICIOCL/faces/GrievanceMainPage.jspx">
+                                                            Queries on Fuel Stations
+                                                        </a>
+                                                </li>
+                                                <li class="nav-item dropdown">
+                                                        <a class="nav-link" href="https://cx.indianoil.in/webcenter/portal/Customer/pages_landingpage?IOCL_Redirect=YES">
+                                                            Vigilance Complaint
+                                                        </a>
+                                                </li>
+                                                <li class="nav-item dropdown">
+                                                        <a class="nav-link" href="javascript:void(0);">
+                                                            Right to Information
+                                                            <div class="nav-item-arrow"></div>
+                                                        </a>
+                                                    <ul>
+                                                                <li class="nav-item dropdown">
+                                                                        <a class="nav-link" href="/rti-manual">RTI Manual</a>
+                                                                </li>
+                                                                <li class="nav-item dropdown">
+                                                                        <a class="nav-link" href="/cpio">
+                                                                            CPIO/APIO Details
+                                                                        </a>
+                                                                </li>
+                                                                <li class="nav-item dropdown">
+                                                                        <a class="nav-link" href="/rti-ready-reckoner">RTI Ready Reckoner</a>
+                                                                </li>
+                                                                <li class="nav-item dropdown">
+                                                                        <a class="nav-link" href="/rti-audit-report">RTI Audit Report</a>
+                                                                </li>
+                                                                <li class="nav-item dropdown">
+                                                                        <a class="nav-link" href="/nodal-officer">Nodal Officer</a>
+                                                                </li>
+                                                                <li class="nav-item dropdown">
+                                                                        <a class="nav-link" href="/committee-for-faq">Committee for FAQ</a>
+                                                                </li>
+                                                                <li class="nav-item dropdown">
+                                                                        <a class="nav-link" href="/uploads/EOP16072025.pdf">
+                                                                            Equal Opportunity Policy 
+                                                                        </a>
+                                                                </li>
+                                                                <li class="nav-item dropdown">
+                                                                        <a class="nav-link" href="/uploads/Promotion_and_Transfer_2025.pdf">
+                                                                            Transfer and Promotion
+                                                                        </a>
+                                                                </li>
+                                                                <li class="nav-item dropdown">
+                                                                        <a class="nav-link" href="/uploads/Format_Parliament_Q_and_R2025.pdf">
+                                                                            Parliament Questions and Replies
+                                                                        </a>
+                                                                </li>
+                                                    </ul>
+                                                </li>
+                                                <li class="nav-item dropdown">
+                                                            <a class="nav-link" href="/citizen-charter">
+                                                                Citizen Charter
+                                                            </a>
+                                                </li>
+                                                <li class="nav-item dropdown">
+                                                            <a class="nav-link" href="/statutory-notices">
+                                                                Statutory Notices
+                                                            </a>
+                                                </li>
+                                                <li class="nav-item dropdown">
+                                                            <a class="nav-link" href="/contact-us">
+                                                                Contact Us
+                                                            </a>
+                                                </li>
+                                </ul>
+                        </li>
+</ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+        </div>
+    </header>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" integrity="sha384-6kXTZ7fhnXt3dXFGRTXM1nDWqGXu52HQ/gS9aTAzGWy55Wl3HZvqbNe2VkDMFR/Z" crossorigin="anonymous">
+<style>
+    .mainbox { background-color: #95c2de; margin: auto; height: 600px; width: 600px; position: relative; }
+    .err { color: #ffffff; font-family: 'Nunito Sans', sans-serif; font-size: 11rem; position: absolute; left: 20%; top: 8%; }
+    .far { position: absolute; font-size: 8.5rem; left: 42%; top: 15%; color: #ffffff; }
+    .err2 { color: #ffffff; font-family: 'Nunito Sans', sans-serif; font-size: 11rem; position: absolute; left: 68%; top: 8%; }
+    .msg { /*   text-align: center;*/ text-align: left; font-family: 'Nunito Sans', sans-serif; font-size: 1.6rem; position: absolute; left: 16%; top: 45%; width: 75%; }
+    a { text-decoration: none; /* color: white;*/ }
+        a:hover { text-decoration: underline; }
+</style>
+    <div style=" background-color: #95c2de;">
+        <div class="mainbox">
+            <div class="err">4</div>
+            <i class="far fa-question-circle fa-spin"></i>
+            <div class="err2">4</div>
+            <div class="msg">
+                The page you are looking for doesn&#x27;t exist, you may have mistyped the address or the page may have moved.
+                <p>Let's go to <a href="/">Home page</a></p>
+            </div>
+        </div>
+    </div>
+
+    <footer class="site-footer">
+                <div class="row">
+                    <div class="footer-left col-lg-4">
+                        <p><span><a href="javascript:void(0);" data-toggle="modal" data-target="#CopyrightPolicyContent">Copyright</a> © Indian Oil Corporation Ltd</span> <br /> <span> <a href="/pages/sitemap">Site Map</a>  |  <a href="javascript:void(0);" data-toggle="modal" data-target="#termsContent">Terms of Use</a>  |  <a href="javascript:void(0);" data-toggle="modal" data-target="#privacyContent">Data Privacy Policy</a> |  <a href="javascript:void(0);" data-toggle="modal" data-target="#HyperlinkContent">Hyperlinking Policy</a></span></p>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="footer-right">
+                            <p class="text-center">
+                                <span>Toll FREE Number: 1800-2333-555</span><br />
+                                <span>Commercial LPG Helpline No. 1860-5991-111</span><br />
+                                    <span>Last updated on  26/09/2025 03:34 PM</span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-2">
+                        <div class="footer-right">
+                            <p class="text-center">
+                                <span>LPG Emergency Helpline: 1906</span><br />
+                                <span><a href="https://www.planetecomsolutions.com/" target="_blank">Powered By PECS</a></span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="footer-right">
+                            <p class="text-right">
+                                <span><a href="https://spandan.indianoil.co.in/SBA/" target="_blank"><img src="/assets/images/swachh-bharatW.png" alt="swachh bharat" /></a></span> <span><a href="https://www.india.gov.in/" target="_blank"><img src="/assets/images/india_gov_in.png" /></a></span><span><a href="https://www.ncwwomenhelpline.in/" target="_blank"><img src="/assets/images/logo-NCW.png" style="width: 100px;" /></a></span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+    </footer>
+    <!-- Modal voiceSearch -->
+    <!--<div class="modal fade" id="voiceSearch" tabindex="-1" role="dialog" aria-labelledby="voiceSearch" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle">Voice search</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>Click on the below button and speak something...</p>
+                    <p><button type="button" onclick="runSpeechRecognition()">Speech to Text</button> &nbsp; <span id="action"></span></p>-->
+    <!--<input id="output" class="hide" /><br /><br />
+                    <label id="lbl1" class="hide"></label>
+                </div>
+            </div>
+        </div>
+    </div>-->
+    <!-- Modal HyperlinkContent -->
+    <div class="modal fade" id="HyperlinkContent" tabindex="-1" role="dialog" aria-labelledby="HyperlinkContent" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle">Hyperlinking Policy</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <h3>Links to external websites/portals</h3>
+                    <p>At many places in this website, you shall find links to other websites/portals. The links have been placed for your convenience. IndianOil is not responsible for the contents and reliability of the linked websites and does not necessarily endorse the views expressed in them. Mere presence of the link or its listing on this website should not be assumed as endorsement of any kind. We cannot guarantee that these links will work all the time and we have no control over the availability of linked pages.</p>
+                    <p>When you select a link to an external website, you shall be leaving IndianOil's website and shall be subject to the privacy and security policies of the owners/sponsors of the outside website(s).</p>
+                    <p>IndianOil cannot authorise the use of copyrighted material contained in the linked website(s). Users are advised to request for such authorisation from the owners of the linked website(s).</p>
+                    <h3>Links to IndianOil Website from other websites</h3>
+                    <p>Prior permission is required before hyperlinks are directed from any website/portal to this site. Permission for the same, stating the nature of the content on the pages from where the link has to be given and the exact language of the Hyperlink, should be obtained by sending a request to our Corporate Office. Please visit the Contact Us page of our website for more information.</p>
+                    <p>Also, we do not permit our pages to be loaded into frames on your site. The pages belonging to this site must load into a newly opened browser window of the user.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal HyperlinkContentH -->
+    <div class="modal fade" id="HyperlinkContentH" tabindex="-1" role="dialog" aria-labelledby="HyperlinkContentH" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle">Hyperlinking Policy</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <h3>Links to external websites/portals</h3>
+                    <p>At many places in this website, you shall find links to other websites/portals. The links have been placed for your convenience. IndianOil is not responsible for the contents and reliability of the linked websites and does not necessarily endorse the views expressed in them. Mere presence of the link or its listing on this website should not be assumed as endorsement of any kind. We cannot guarantee that these links will work all the time and we have no control over the availability of linked pages.</p>
+                    <p>When you select a link to an external website, you shall be leaving IndianOil's website and shall be subject to the privacy and security policies of the owners/sponsors of the outside website(s).</p>
+                    <p>IndianOil cannot authorise the use of copyrighted material contained in the linked website(s). Users are advised to request for such authorisation from the owners of the linked website(s).</p>
+                    <h3>Links to IndianOil Website from other websites</h3>
+                    <p>Prior permission is required before hyperlinks are directed from any website/portal to this site. Permission for the same, stating the nature of the content on the pages from where the link has to be given and the exact language of the Hyperlink, should be obtained by sending a request to our Corporate Office. Please visit the Contact Us page of our website for more information.</p>
+                    <p>Also, we do not permit our pages to be loaded into frames on your site. The pages belonging to this site must load into a newly opened browser window of the user.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal termsContent -->
+    <div class="modal fade" id="termsContent" tabindex="-1" role="dialog" aria-labelledby="termsContent" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle">Terms of Use</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>The following terms and conditions will be deemed to have been accepted by the User on usage of the website www.iocl.com. You are requested to read them carefully before you use the services of this site.</p>
+                    <ol class="desimal">
+                        <li><p>The term User shall refer to the user who is browsing the site. The term IndianOil shall refer to Indian Oil Corporation Limited. The term Site refers to www.iocl.com owned and monitored by IndianOil.</p></li>
+                        <li><p>By using the Site, you agree to follow and be bound by the following terms and conditions concerning your use of the Site. IndianOil may revise the Terms of Use at any time without notice to you. Areas of the Site may have different terms of use posted. If there is a conflict between the Terms of Use and terms of use posted for a specific area of the Site, the latter shall have precedence with respect to your use of that area of the Site.</p></li>
+                        <li><p>IndianOil may terminate User's access at any time for any reason. The provisions regarding to disclaimer of warranty, accuracy of information, and indemnification shall survive such termination. IndianOil may monitor access to the Site.</p></li>
+                        <li><p>All content present on this site is the exclusive property of IndianOil. The software, text, images, graphics, video and audio used on this site belong to IndianOil. No material from this site may be copied, modified, reproduced, republished, uploaded, transmitted, posted or distributed in any form without prior written permission from IndianOil. All rights not expressly granted herein are reserved. Unauthorized use of the materials appearing on this site may violate copyright, trademark and other applicable laws, and could result in criminal or civil penalties. IndianOil is a registered trademark of Indian Oil Corporation Ltd. This trademark may not be used in any manner without prior written consent from IndianOil.</p></li>
+                        <li><p>IndianOil does not make any warranties, express or implied, including, without limitation, those of merchantability and fitness for a particular purpose, with respect to any information, data, statements or products made available on the Site.</p></li>
+                        <li><p>The Site, and all content, materials, information, software, products and services provided on the Site, are provided on an "as is" and "as available" basis. IndianOil expressly disclaims all warranties of any kind, whether express or implied, including, but not limited to, the implied warranties of merchantability, fitness for a particular purpose and non-infringement.</p></li>
+                        <li><p>IndianOil shall have no responsibility for any damage to User's computer system or loss of data that results from the download of any content, materials, information from the Site.</p></li>
+                        <li><p>IndianOil may change or discontinue any aspect of its website at any time, including, its content or features. IndianOil reserves the right to change the terms and conditions applicable to use of the Site. Such changes shall be effective immediately upon notice, which shall be placed on the Site.</p></li>
+                        <li><p>In no event will IndianOil be liable for damages of any kind, including without limitation, direct, incidental or consequential damages (including, but not limited to, damages for lost profits, business interruption and loss of programs or information) arising out of the use of or inability to use IndianOil's website, or any information provided on the website, or in the Products any claim attributable to errors, omissions or other inaccuracies in the Product or interpretations thereof. Some jurisdictions do not allow the limitation or exclusion of liability. Accordingly, some of the above limitations may not apply to the User.</p></li>
+                        <li><p>User agrees to indemnify, defend and hold IndianOil harmless from and against all losses, expenses, damages and costs, including reasonable attorneys' fees, arising out of or relating to any misuse by the User of the content and services provided on the Site.</p></li>
+                        <li><p>The information contained in the Site has been obtained from sources believed to be reliable. IndianOil disclaims all warranties as to the accuracy, completeness or adequacy of such information.</p></li>
+                        <li><p>IndianOil makes no warranty that: (a) the Site will meet your requirements; (b) the Site will be available on an uninterrupted, timely, secure, or error-free basis; (c) the results that may be obtained from the use of the Site or any services offered through the Site will be accurate or reliable.</p></li>
+                        <li><p>The User's right to privacy is of paramount importance to IndianOil. Any information provided by the User will not be shared with any third party. IndianOil reserves the right to use the information to provide the User a more personalized online experience.</p></li>
+                        <li><p>The Site provides links to web sites and access to content, products and services from third parties, including users, advertisers, affiliates and sponsors of the Site. You agree that IndianOil is not responsible for the availability of, and content provided on, third party web sites. The User is requested to peruse the policies posted by other web sites regarding privacy and other topics before use. IndianOil is not responsible for third party content accessible through the Site, including opinions, advice, statements and advertisements, and User shall bear all risks associated with the use of such content. IndianOil is not responsible for any loss or damage of any sort User may incur from dealing with any third party.</p></li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal termsContent -->
+    <div class="modal fade" id="termsContentH" tabindex="-1" role="dialog" aria-labelledby="termsContentH" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle">Terms of Use</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>The following terms and conditions will be deemed to have been accepted by the User on usage of the website www.iocl.com. You are requested to read them carefully before you use the services of this site.</p>
+                    <ol class="desimal">
+                        <li><p>The term User shall refer to the user who is browsing the site. The term IndianOil shall refer to Indian Oil Corporation Limited. The term Site refers to www.iocl.com owned and monitored by IndianOil.</p></li>
+                        <li><p>By using the Site, you agree to follow and be bound by the following terms and conditions concerning your use of the Site. IndianOil may revise the Terms of Use at any time without notice to you. Areas of the Site may have different terms of use posted. If there is a conflict between the Terms of Use and terms of use posted for a specific area of the Site, the latter shall have precedence with respect to your use of that area of the Site.</p></li>
+                        <li><p>IndianOil may terminate User's access at any time for any reason. The provisions regarding to disclaimer of warranty, accuracy of information, and indemnification shall survive such termination. IndianOil may monitor access to the Site.</p></li>
+                        <li><p>All content present on this site is the exclusive property of IndianOil. The software, text, images, graphics, video and audio used on this site belong to IndianOil. No material from this site may be copied, modified, reproduced, republished, uploaded, transmitted, posted or distributed in any form without prior written permission from IndianOil. All rights not expressly granted herein are reserved. Unauthorized use of the materials appearing on this site may violate copyright, trademark and other applicable laws, and could result in criminal or civil penalties. IndianOil is a registered trademark of Indian Oil Corporation Ltd. This trademark may not be used in any manner without prior written consent from IndianOil.</p></li>
+                        <li><p>IndianOil does not make any warranties, express or implied, including, without limitation, those of merchantability and fitness for a particular purpose, with respect to any information, data, statements or products made available on the Site.</p></li>
+                        <li><p>The Site, and all content, materials, information, software, products and services provided on the Site, are provided on an "as is" and "as available" basis. IndianOil expressly disclaims all warranties of any kind, whether express or implied, including, but not limited to, the implied warranties of merchantability, fitness for a particular purpose and non-infringement.</p></li>
+                        <li><p>IndianOil shall have no responsibility for any damage to User's computer system or loss of data that results from the download of any content, materials, information from the Site.</p></li>
+                        <li><p>IndianOil may change or discontinue any aspect of its website at any time, including, its content or features. IndianOil reserves the right to change the terms and conditions applicable to use of the Site. Such changes shall be effective immediately upon notice, which shall be placed on the Site.</p></li>
+                        <li><p>In no event will IndianOil be liable for damages of any kind, including without limitation, direct, incidental or consequential damages (including, but not limited to, damages for lost profits, business interruption and loss of programs or information) arising out of the use of or inability to use IndianOil's website, or any information provided on the website, or in the Products any claim attributable to errors, omissions or other inaccuracies in the Product or interpretations thereof. Some jurisdictions do not allow the limitation or exclusion of liability. Accordingly, some of the above limitations may not apply to the User.</p></li>
+                        <li><p>User agrees to indemnify, defend and hold IndianOil harmless from and against all losses, expenses, damages and costs, including reasonable attorneys' fees, arising out of or relating to any misuse by the User of the content and services provided on the Site.</p></li>
+                        <li><p>The information contained in the Site has been obtained from sources believed to be reliable. IndianOil disclaims all warranties as to the accuracy, completeness or adequacy of such information.</p></li>
+                        <li><p>IndianOil makes no warranty that: (a) the Site will meet your requirements; (b) the Site will be available on an uninterrupted, timely, secure, or error-free basis; (c) the results that may be obtained from the use of the Site or any services offered through the Site will be accurate or reliable.</p></li>
+                        <li><p>The User's right to privacy is of paramount importance to IndianOil. Any information provided by the User will not be shared with any third party. IndianOil reserves the right to use the information to provide the User a more personalized online experience.</p></li>
+                        <li><p>The Site provides links to web sites and access to content, products and services from third parties, including users, advertisers, affiliates and sponsors of the Site. You agree that IndianOil is not responsible for the availability of, and content provided on, third party web sites. The User is requested to peruse the policies posted by other web sites regarding privacy and other topics before use. IndianOil is not responsible for third party content accessible through the Site, including opinions, advice, statements and advertisements, and User shall bear all risks associated with the use of such content. IndianOil is not responsible for any loss or damage of any sort User may incur from dealing with any third party.</p></li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal termsContent -->
+    <div class="modal fade" id="privacyContent" tabindex="-1" role="dialog" aria-labelledby="privacyContent" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle">Data Privacy Policy</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p><strong>GRIEVANCE OFFICER</strong></p>
+                    <p>
+                        In accordance with the Indian Information Technology Act 2000 and the rules notified
+                        thereunder, the contact details of the Grievance Officer are provided below:
+                    </p>
+                    <p>
+                        Sh. Abhinav Bhatt,<br>
+                        Corporate Business Technology Centre,<br>
+                        Indian Oil Institute of Petroleum Management Campus,<br>
+                        Plot No. 83, Institutional Area,<br>
+                        Sector 18, Gurugram,<br>
+                        Haryana – 122001
+                        <br><br>
+                        Email: data-grievance[at]indianoil[dot]in<br>
+                        Phone : 0124-2861509
+                    </p>
+                    <p>
+                        <a href="/download/Data-Privacy-Policy-Offline-Data-Collection.pdf" target="_blank">Click here</a> to view IndianOil's Data Privacy Policy (Offline Data Collection).
+                    </p>
+                    <p>
+                        <a href="/download/Data-Privacy-Policy-Online-Data-Collection.pdf" target="_blank">Click here</a> to view IndianOil's Data Privacy Policy (Online Data Collection).
+                    </p>
+                    <p><strong>CHANGES TO THIS PRIVACY POLICY</strong></p>
+                    <p>				The Policy is subject to modifications from time to time. If IOCL decides to change this Policy, IOCL shall publish the modified Policy on its website.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal privacyContentH -->
+    <div class="modal fade" id="privacyContentH" tabindex="-1" role="dialog" aria-labelledby="privacyContentH" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle">Data Privacy Policy</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p><strong>GRIEVANCE OFFICER</strong></p>
+                    <p>
+                        In accordance with the Indian Information Technology Act 2000 and the rules notified
+                        thereunder, the contact details of the Grievance Officer are provided below:
+                    </p>
+                    <p>
+                        Sh. Abhinav Bhatt,<br>
+                        Corporate Business Technology Centre,<br>
+                        Indian Oil Institute of Petroleum Management Campus,<br>
+                        Plot No. 83, Institutional Area,<br>
+                        Sector 18, Gurugram,<br>
+                        Haryana – 122001
+                        <br><br>
+                        Email: data-grievance[at]indianoil[dot]in<br>
+                        Phone : 0124-2861509
+                    </p>
+                    <p>
+                        <a href="/download/Data-Privacy-Policy-Offline-Data-Collection.pdf" target="_blank">Click here</a> to view IndianOil's Data Privacy Policy (Offline Data Collection).
+                    </p>
+                    <p>
+                        <a href="/download/Data-Privacy-Policy-Online-Data-Collection.pdf" target="_blank">Click here</a> to view IndianOil's Data Privacy Policy (Online Data Collection).
+                    </p>
+                    <p><strong>CHANGES TO THIS PRIVACY POLICY</strong></p>
+                    <p>				The Policy is subject to modifications from time to time. If IOCL decides to change this Policy, IOCL shall publish the modified Policy on its website.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal CopyrightContent -->
+    <div class="modal fade" id="CopyrightPolicyContent" tabindex="-1" role="dialog" aria-labelledby="CopyrightPolicyContent" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle">Copyright Policy</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>All content, designs, logos, images, and materials displayed on this website are protected by copyright and other intellectual property laws. Unauthorized reproduction, distribution, or modification of any content from this site is strictly prohibited and may result in legal action.</p>
+                    <p><strong>Prohibition of Design and Layout Replication</strong></p>
+                    <p>We kindly remind our users, visitors, and third parties that replicating, copying, or imitating our website’s design, layout, or any distinctive features without explicit authorization is strictly prohibited. This includes, but is not limited to:</p>
+                    <ol class="desimal">
+                        <li><p>Replicating the visual design or layout of our webpages.</p></li>
+                        <li><p>Copying or mimicking our unique combination of colors, fonts, graphical elements, or navigational elements.</p></li>
+                        <li><p>Reproducing our website’s structure, organization, or presentation.</p></li>
+                        <li><p>Using any automated tools, software, or manual methods to replicate or copy any aspect of our website’s design or layout</p></li>
+                        
+                    </ol>
+                    <p><strong>Copyright Infringement Notice</strong></p>
+                    <p>We take copyright infringement seriously and will pursue appropriate legal action against those who infringe upon our intellectual property rights. </p>
+                    <p><strong>Conclusion</strong></p>
+                    <p>We appreciate your understanding and compliance with our Copyright Policy. By accessing or using our website, you agree to abide by these copyright protections and refrain from unauthorized replication or copying of our design and layout.</p>
+                    <p>Thank you for visiting!</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="CopyrightPolicyContentH" tabindex="-1" role="dialog" aria-labelledby="CopyrightPolicyContentH" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle">Copyright Policy</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>All content, designs, logos, images, and materials displayed on this website are protected by copyright and other intellectual property laws. Unauthorized reproduction, distribution, or modification of any content from this site is strictly prohibited and may result in legal action.</p>
+                    <p><strong>Prohibition of Design and Layout Replication</strong></p>
+                    <p>We kindly remind our users, visitors, and third parties that replicating, copying, or imitating our website’s design, layout, or any distinctive features without explicit authorization is strictly prohibited. This includes, but is not limited to:</p>
+                    <ol class="desimal">
+                        <li><p>Replicating the visual design or layout of our webpages.</p></li>
+                        <li><p>Copying or mimicking our unique combination of colors, fonts, graphical elements, or navigational elements.</p></li>
+                        <li><p>Reproducing our website’s structure, organization, or presentation.</p></li>
+                        <li><p>Using any automated tools, software, or manual methods to replicate or copy any aspect of our website’s design or layout</p></li>
+
+                    </ol>
+                    <p><strong>Copyright Infringement Notice</strong></p>
+                    <p>We take copyright infringement seriously and will pursue appropriate legal action against those who infringe upon our intellectual property rights. </p>
+                    <p><strong>Conclusion</strong></p>
+                    <p>We appreciate your understanding and compliance with our Copyright Policy. By accessing or using our website, you agree to abide by these copyright protections and refrain from unauthorized replication or copying of our design and layout.</p>
+                    <p>Thank you for visiting!</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="search-overlay"></div>
+    <div class="nav-overlay"></div>
+    <script src="/assets/js/jqueryLatest.js?v=M6z45rnutj-QpCgQzUihibcZwwO18Dd2Yy7U_iw_pXg"></script>
+    <script src="/assets/js/materialize.min.js?v=U_cHDMTIHCeMcvehBv1xQ052bPSbJtbuiw4QA9cTKz0"></script>
+    <script src="/assets/js/bootstrap.min.js?v=Jfd5SoGPOf8qsj2Caaelt22CEWVbQR3IY779PqdAnaY"></script>
+    <script src="/assets/js/jas-carousel.js?v=V6RDJs2aOT1RQbDAzdErUdPOY_mPEsL6p7HkcCF3d1g"></script>
+    <script src="/assets/js/lightgallery.min.js?v=rKOQ4dLaw4bkeXWKyuIwuj83rbUtZ47Z1yuhsznT6iw"></script>
+    <script src="/assets/js/lg-thumbnail.min.js?v=dvYfaLx7SYK6bPHXsDe70E2KWCfYSNQglONDONc2MX0"></script>
+    <script src="/assets/js/lg-video.min.js?v=CtlZKApVfsSJEbZRrUEcl0Qvswf3tMh6EMNzTbY_JQc"></script>
+    <script src="/assets/js/blissaccess.js?v=KHHhquJIXuKhu3r697bCcMMPVCkyLQOgZlzTN9I_-jk"></script>
+    
+    <script src="/assets/js/select2.min.js?v=70QcFVMi3-VGiAVSY1KGFibayMynhoK4aX6BVJErm00"></script>
+    <script src="/assets/js/custom.js?v=uGi0IF7sVNNkBGAFOpPgUaAhiVjNSFa4hvopYx8l4hM"></script>
+    <script>
+        /*voice search*/
+        $("#output").keyup(function () {
+            action.innerHTML = "<button type='submit' class='btn btn-primary'>Go</Button>";
+        });
+        function runSpeechRecognition() {
+            // get output div reference
+            //var output = document.getElementById("output");
+            //var output = $('#output');
+            var labeltext = document.getElementById("lbl1");
+            // get action element reference
+            var action = document.getElementById("action");
+            // new speech recognition object
+            var SpeechRecognition = SpeechRecognition || webkitSpeechRecognition;
+            var recognition = new SpeechRecognition();
+            // This runs when the speech recognition service starts
+            recognition.onstart = function () {
+                action.innerHTML = "<small>listening, please speak...</small>";
+            };
+            recognition.onspeechend = function () {
+                action.innerHTML = "<button type='submit' class='btn btn-primary'>Go</Button>";
+                recognition.stop();
+            }
+            // This runs when the speech recognition service returns result
+            recognition.onresult = function (event) {
+                var transcript = event.results[0][0].transcript;
+                var confidence = event.results[0][0].confidence;
+                //output.innerHTML = "<b>Text:</b> " + transcript + "<br/> <b>Confidence:</b> " + confidence * 100 + "%";
+                //output.innerHTML = transcript;
+                $('#output').val(transcript);
+                //labeltext.innerHTML = "<b>" + "Confidence level :" + "</b>" + Math.round(confidence * 100) + "%";
+                //output.innerText = "<b>Text:</b> " + transcript + "<br/> <b>Confidence:</b> " + confidence * 100 + "%";
+                output.classList.remove("hide");
+                //labeltext.classList.remove("hide");
+            };
+            // start recognition
+            recognition.start();
+        }
+        /*voice search*/
+        if (window.location.pathname == "/sustainability" || window.location.pathname == "/Sustainability" || window.location.pathname == "/pages/faq") {
+            var s = document.createElement("script");
+            s.type = "text/javascript";
+            s.src = "/assets/js/easy-responsive-tabs.js";
+            $("body").append(s);
+            console.log("sustain");
+            $('#horizontalTab').easyResponsiveTabs();
+            $('.expRead').click(function (event) {
+                event.preventDefault();
+                $(this).parent().find('.expander-main').slideToggle();
+                $(this).text(($(this).text() == 'Read Less') ? 'Read More' : 'Read Less').fadeIn();
+            });
+            $('.relatedClick').click(function () {
+                $(this).find('i').toggleClass('fa fa-plus fa fa-minus');
+                $(this).parent().find('.relatedLinks-main').slideToggle();
+            });
+        }
+    </script>
+</body>
+</html>

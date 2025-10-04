@@ -1,0 +1,20 @@
+{
+  "tunneling_providers": [
+    "ngrok.io",
+    "vercel.app",
+    "render.com",
+    "onrender.com",
+    "pages.dev",
+    "github.io",
+    "netlify.app",
+    "glitch.me",
+    "firebaseapp.com"
+  ],
+  "parking_phrases": [
+    "domain for sale",
+    "buy this domain",
+    "this domain is parked",
+    "coming soon",
+    "under construction"
+  ]
+}
