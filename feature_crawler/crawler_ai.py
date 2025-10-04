@@ -15,8 +15,8 @@ from pathlib import Path
 project_root = Path(__file__).parent.parent
 sys.path.insert(0, str(project_root))
 
-from crawler.extractor import FeatureExtractor
-from crawler.utils import normalize_url, detect_url_column, safe_name_for_file
+from feature_crawler.extractor import FeatureExtractor
+from feature_crawler.utils import normalize_url, detect_url_column, safe_name_for_file
 from PIL import Image
 import io, imagehash, hashlib
 

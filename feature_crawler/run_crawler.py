@@ -20,7 +20,7 @@
 # python -m feature_extraction.run_crawler input.xlsx output.csv --max-depth 2 --max-pages 3 --both
 
 import argparse
-from crawler.crawler_main import crawl_from_file
+from feature_crawler.crawler_main import crawl_from_file
 import sys
 from pathlib import Path
 

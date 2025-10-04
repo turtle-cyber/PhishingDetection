@@ -145,10 +145,10 @@ from urllib.parse import urljoin, urlparse
 from bs4 import BeautifulSoup
 from playwright.sync_api import sync_playwright
 #from crawler.extractor import FeatureExtractor
-from crawler.utils import normalize_url, safe_name_for_file, detect_url_column
-from crawler.image_utils import render_screenshot_and_pdf
-from crawler.persistence import ensure_db
-from crawler.extractor2 import FeatureExtractor
+from feature_crawler.utils import normalize_url, safe_name_for_file, detect_url_column
+from feature_crawler.image_utils import render_screenshot_and_pdf
+from feature_crawler.persistence import ensure_db
+from feature_crawler.extractor2 import FeatureExtractor
 
 
 class Crawler:
