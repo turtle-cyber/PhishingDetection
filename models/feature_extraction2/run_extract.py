@@ -2,7 +2,7 @@
 import os
 import argparse
 import pandas as pd
-from extractor import FeatureExtractor
+from extractor2 import FeatureExtractor
 from utils import detect_url_column
 
 def main(input_xlsx, output_csv, sheet_name=0, url_col=None, workers=8):

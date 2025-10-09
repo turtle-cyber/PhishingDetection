@@ -62,13 +62,55 @@ def orb_logo_matches(img_path, template_path, min_matches=8):
     except Exception:
         return 0
 
-def ocr_image(img_path):
-    """Return OCR string. Requires Tesseract installed on system."""
+# def ocr_image(img_path):
+#     """Return OCR string. Requires Tesseract installed on system."""
+#     try:
+#         txt = pytesseract.image_to_string(Image.open(img_path))
+#         return txt
+#     except Exception:
+#         return ""
+
+import pytesseract
+import cv2
+import numpy as np
+from PIL import Image
+
+def ocr_image(img_path, lang="eng+hin", psm=6):
+    """
+    Perform OCR with pre-processing.
+    Supports multilingual (English + Hindi by default).
+    Returns cleaned text or error info.
+    """
     try:
-        txt = pytesseract.image_to_string(Image.open(img_path))
+        #  1. Load image safely
+        img = cv2.imread(img_path)
+        if img is None:
+            raise ValueError(f"Could not read image: {img_path}")
+
+        #  2. Preprocess for OCR
+        gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
+        gray = cv2.bilateralFilter(gray, 9, 75, 75)   # reduce noise
+        gray = cv2.adaptiveThreshold(gray, 255,
+                                     cv2.ADAPTIVE_THRESH_GAUSSIAN_C,
+                                     cv2.THRESH_BINARY, 31, 2)
+        # enlarge for better OCR accuracy
+        scale = 2
+        gray = cv2.resize(gray, (gray.shape[1]*scale, gray.shape[0]*scale),
+                          interpolation=cv2.INTER_LINEAR)
+
+        #  3. Run Tesseract
+        custom_oem_psm = f'--oem 3 --psm {psm}'
+        txt = pytesseract.image_to_string(gray, lang=lang, config=custom_oem_psm)
+
+        #  4. Post-clean
+        txt = txt.replace('\n', ' ').replace('\r', ' ').strip()
         return txt
-    except Exception:
-        return ""
+
+    except Exception as e:
+        return f"[OCR_ERROR] {e}"
+
+
+
 def save_image_from_bytes(img_bytes, save_path):
     """Save image bytes to a file."""
     try:

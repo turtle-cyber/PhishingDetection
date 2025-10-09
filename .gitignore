@@ -1,3 +1,16 @@
 phishing/
 */__pycache__/
-
+models/
+notebooks/
+StageIModel/
+Phishing_Evidences/
+Phishing_Evidences2/
+PS2_document/
+combined_features.csv
+crawler_state.db
+output_ai.csv
+output_features_stage.csv
+output_features_stage.xlsx
+output_phishing.csv
+output_phishing3.csv
+processed_features.csv

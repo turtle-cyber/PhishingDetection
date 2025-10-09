@@ -8,7 +8,7 @@ import requests
 from bs4 import BeautifulSoup
 from datetime import datetime
 from collections import Counter
-
+import time
 # GEOIP (maxmind)
 try:
     import geoip2.database
@@ -200,9 +200,26 @@ class FeatureExtractor:
                 # compute phash (already maybe present)
                 if not out.get("screenshot_phash"):
                     out["screenshot_phash"] = compute_phash(out["evidence_png"])
-                # OCR
-                out["ocr_text"] = ocr_image(out["evidence_png"])
-                # compare against gallery
+                for _ in range(3):
+                    try:
+                        if os.path.exists(out["evidence_png"]) and os.path.getsize(out["evidence_png"]) > 1000:
+                            break
+                    except Exception:
+                        pass
+                    time.sleep(0.5)
+                try:
+                    ocr_result = ocr_image(out["evidence_png"])
+                    if ocr_result.startswith("[OCR_ERROR]"):
+                        out["ocr_error"] = ocr_result
+                        out["ocr_text"] = ""
+                    else:
+                        out["ocr_text"] = ocr_result
+                except Exception as e:
+                    out["ocr_error"] = str(e)
+                    out["ocr_text"] = ""
+                # # OCR
+                # out["ocr_text"] = ocr_image(out["evidence_png"])
+                # # compare against gallery
                 gallery = self.trusted_gallery_dir
                 if os.path.isdir(gallery):
                     ssim_scores = []

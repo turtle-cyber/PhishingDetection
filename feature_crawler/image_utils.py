@@ -116,10 +116,13 @@
 #     return out
 
 # crawler/image_utils.py
-import os, io, time
-from urllib.parse import urlparse
+import os, io, time, imagehash
+from urllib.parse import urlparse, urljoin
 from PIL import Image
 import imagehash
+import requests, hashlib
+from bs4 import BeautifulSoup
+
 
 RUN_EVIDENCE_DIR = os.environ.get("PHISHING_EVIDENCE_DIR", "Phishing_Evidences")
 
@@ -180,47 +183,136 @@ def render_screenshot_and_pdf(url, out_dir=None, base_name=None, page=None, time
     return res
 
 # Favicon fetch that also saves the file
+# def fetch_favicon(url, out_dir=None, timeout=8):
+#     from bs4 import BeautifulSoup
+#     import requests, hashlib
+#     out_dir = out_dir or RUN_EVIDENCE_DIR
+#     safe_mkdir(out_dir)
+#     res = {"favicon_present": False, "favicon_md5": "", "favicon_phash": "", "favicon_path": "", "favicon_error": ""}
+#     try:
+#         r = requests.get(url, timeout=timeout)
+#         try:
+#             soup = BeautifulSoup(r.content, "lxml")
+#         except Exception:
+#             soup = BeautifulSoup(r.content, "html.parser")
+#         icon_link = None
+#         for tag in soup.find_all("link", rel=True):
+#             rels = " ".join(tag.get("rel", [])).lower()
+#             href = tag.get("href", "")
+#             if "icon" in rels or "favicon" in href.lower():
+#                 icon_link = href
+#                 break
+
+#         if not icon_link:
+#             parsed = urlparse(r.url)
+#             icon_link = f"{parsed.scheme}://{parsed.netloc}/favicon.ico"
+
+#         icon_url = urljoin(r.url, icon_link)
+#         ir = requests.get(icon_url, timeout=timeout, headers={"User-Agent":"Mozilla/5.0"})
+#         if ir.status_code == 200 and ir.content:
+#             safe_mkdir(out_dir)
+#             safe_domain = urlparse(url).netloc.replace(":", "_")
+    
+#             fav_path = _abs_path(out_dir, f"{safe_domain}_favicon")
+#             # guess extension from content-type
+#             ct = ir.headers.get("Content-Type","").lower()
+#             if "png" in ct:
+#                 fav_path += ".png"
+#             else:
+#                 fav_path += ".ico"
+#             with open(fav_path, "wb") as f:
+#                 f.write(ir.content)
+#             # compute hashes
+#             img = Image.open(io.BytesIO(ir.content)).convert("RGB")
+#             res["favicon_present"] = True
+#             res["favicon_phash"] = str(imagehash.phash(img))
+#             res["favicon_md5"] = hashlib.md5(ir.content).hexdigest()
+#             res["favicon_path"] = fav_path
+#     except Exception as e:
+#         res["favicon_error"] = str(e)
+#     return res
 def fetch_favicon(url, out_dir=None, timeout=8):
+    """
+    Robust favicon fetcher:
+    - Tries declared <link rel="icon"> tags
+    - Falls back to /favicon.ico
+    - Handles redirects and login-blocked pages
+    - Saves favicon + computes phash + md5
+    """
     from bs4 import BeautifulSoup
-    import requests, hashlib
+    import requests, hashlib, io
+    from PIL import Image
+    from urllib.parse import urlparse, urljoin
+
     out_dir = out_dir or RUN_EVIDENCE_DIR
     safe_mkdir(out_dir)
-    res = {"favicon_present": False, "favicon_md5": "", "favicon_phash": "", "favicon_path": "", "favicon_error": ""}
+    res = {
+        "favicon_present": False,
+        "favicon_md5": "",
+        "favicon_phash": "",
+        "favicon_path": "",
+        "favicon_error": ""
+    }
+
     try:
-        r = requests.get(url, timeout=timeout)
-        soup = BeautifulSoup(r.content, "lxml")
+        headers = {"User-Agent": "Mozilla/5.0 (PhishDetector)"}
+        parsed = urlparse(url)
+        base = f"{parsed.scheme}://{parsed.netloc}"
+
+        # --- Step 1: Try to load page HTML ---
+        try:
+            r = requests.get(url, timeout=timeout, headers=headers)
+            html = r.content if "text/html" in r.headers.get("Content-Type", "") else b""
+        except Exception:
+            html = b""
+
         icon_link = None
-        for tag in soup.find_all("link", rel=True):
-            rel = " ".join(tag.get("rel", []))
-            if "icon" in rel:
-                icon_link = tag.get("href")
-                break
+        if html:
+            try:
+                soup = BeautifulSoup(html, "lxml")
+            except Exception:
+                soup = BeautifulSoup(html, "html.parser")
+
+            # Try common rel patterns
+            for tag in soup.find_all("link", href=True):
+                rel = " ".join(tag.get("rel", [])).lower()
+                href = tag.get("href", "")
+                if any(k in rel for k in ["icon", "shortcut", "apple-touch"]) or "favicon" in href.lower():
+                    icon_link = href
+                    break
+
+        # --- Step 2: Fallback to /favicon.ico ---
         if not icon_link:
-            parsed = urlparse(r.url)
-            icon_link = f"{parsed.scheme}://{parsed.netloc}/favicon.ico"
-        icon_url = requests.compat.urljoin(r.url, icon_link)
-        ir = requests.get(icon_url, timeout=timeout)
+            icon_link = "/favicon.ico"
+
+        icon_url = urljoin(base, icon_link)
+        ir = requests.get(icon_url, timeout=timeout, headers=headers)
+
+        # --- Step 3: Save and hash ---
         if ir.status_code == 200 and ir.content:
-            safe_mkdir(out_dir)
-            safe_domain = urlparse(url).netloc.replace(":", "_")
-            fav_path = _abs_path(out_dir, f"{safe_domain}_favicon")
-            # guess extension from content-type
-            ct = ir.headers.get("Content-Type","").lower()
-            if "png" in ct:
-                fav_path += ".png"
-            else:
-                fav_path += ".ico"
+            ct = ir.headers.get("Content-Type", "").lower()
+            ext = ".png" if "png" in ct else ".ico" if "ico" in ct else ".jpg"
+            safe_domain = parsed.netloc.replace(":", "_")
+            fav_path = _abs_path(out_dir, f"{safe_domain}_favicon{ext}")
             with open(fav_path, "wb") as f:
                 f.write(ir.content)
-            # compute hashes
-            img = Image.open(io.BytesIO(ir.content)).convert("RGB")
+
+            try:
+                img = Image.open(io.BytesIO(ir.content)).convert("RGB")
+                res["favicon_phash"] = str(imagehash.phash(img))
+            except Exception:
+                res["favicon_phash"] = ""
             res["favicon_present"] = True
-            res["favicon_phash"] = str(imagehash.phash(img))
             res["favicon_md5"] = hashlib.md5(ir.content).hexdigest()
             res["favicon_path"] = fav_path
+        else:
+            res["favicon_error"] = f"Failed to fetch favicon from {icon_url} (status={ir.status_code})"
+
     except Exception as e:
         res["favicon_error"] = str(e)
+
     return res
+
 def compute_phash(path_or_bytes):
     """Return perceptual hash string for an image path or bytes."""
     if isinstance(path_or_bytes, (bytes, bytearray)):
